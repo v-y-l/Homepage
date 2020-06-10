@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: open-sans-light;
+  src: url(assets/OpenSans-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: open-sans-bold;
+  src: url(assets/OpenSans-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: open-sans;
+  src: url(assets/OpenSans-Regular.ttf) format("truetype");
+}
+
+html {
+    background: rgb(53, 54, 58);
+    height: 100%;
+    overflow: hidden;
+}
+
+h2 { color: #444; font-weight: lighter; }
+body {
+    margin: 2em;
+    height: 100%;
+    overflow: hidden;
+}
+body, input[text], button { color: #888; font-family: Cambria, Georgia; }
+button { padding: 0.2em; font-size: 14px}
+* { font-family: 'open-sans-light'; }

@@ -1,0 +1,26 @@
+<table class="folder-table" mat-table [dataSource]="dataSource">
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr class="table-row"
+      [class.even-row]="i % 2 == 0"
+      mat-row
+      *matRowDef="let row; columns: displayedColumns; let i = index"
+      (click)="goToFile(row)"></tr>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <th
+      class="table-cell table-header"
+      mat-header-cell *matHeaderCellDef> Name </th>
+    <td
+      class="table-cell"
+      mat-cell *matCellDef="let element"> {{element.name}} </td>
+  </ng-container>
+
+  <!-- Description Column -->
+  <ng-container matColumnDef="description">
+    <th class="table-cell table-header"
+	mat-header-cell *matHeaderCellDef> Description </th>
+    <td class="table-cell"
+	mat-cell *matCellDef="let element"> {{element.description}} </td>
+  </ng-container>
+</table>

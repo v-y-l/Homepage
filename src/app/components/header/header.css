@@ -1,0 +1,14 @@
+.header {
+    background: rgb(34,34,34);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2px 20px 2px 15px;
+    border-bottom: 1px solid rgb(135,127,126);
+}
+
+.header .user {
+    font-family: 'open-sans';
+    color: white;
+}

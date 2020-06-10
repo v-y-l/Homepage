@@ -1,0 +1,21 @@
+.folder-table {
+    width: 100%;
+}
+
+.table-header {
+    font-family: 'open-sans';
+}
+
+.table-cell {
+    border-bottom-color: #fafafa;
+    color: black;
+}
+
+.table-row:hover {
+    background: rgb(232,240,254);
+    cursor: pointer;
+}
+
+.even-row {
+    background: #fafafa;
+}

@@ -1,0 +1,18 @@
+<div class="fade-in panel">
+  <div
+    class="header"
+    fxLayout="row"
+    fxLayoutAlign="space-between center">
+    <button
+      class="close-button"
+      mat-button
+      (click)="goToHomepage()">
+      ✕</button>
+    <div> BLM </div>
+    <div></div>
+  </div>
+  <div class="content">
+    <ng-content
+      select="[content]"></ng-content>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<button
+  class="tile"
+  fxLayout="col"
+  fxLayoutAlign="center"
+  mat-button (click)="goToShortcut()">
+  <div>
+    <img
+      *ngIf="fileType === FileType.Folder"
+      src="../../assets/folder.png"/>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center">{{name}}</div>
+</button>
+

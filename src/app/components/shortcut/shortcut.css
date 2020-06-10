@@ -1,0 +1,13 @@
+.tile {
+    width: 100px;
+    height: 120px;
+    padding: 25px;
+    border: 1px solid transparent;
+    background: transparent;
+    border-radius: 8px;
+    line-height: 20px;
+}
+
+.tile:hover {
+    background: #fafafa;
+}
