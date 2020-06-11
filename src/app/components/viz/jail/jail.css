@@ -1,0 +1,75 @@
+.panel {
+    width: 100%;
+    height: 75%;
+}
+
+.header {
+    color: black;
+    background: #fafafa;
+    padding: 8px;
+    border-radius: 5px 5px 0px 0px;
+    border: 1px 1px 0px 1px solid rgb(135,127,126);
+}
+
+.content {
+    background: white;
+    border-radius: 0px 0px 5px 5px;
+    border: 1px 1px 0px 1px solid rgb(135,127,126);
+    height: 100%;
+}
+
+.close-button {
+    font-family: 'open-sans';
+    background: rgb(252,91,87);
+    min-width: 0px;
+    line-height: 0px;
+    padding: 0px;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    color: transparent;
+}
+
+.close-button:hover {
+    background-color: rgb(252,91,87);
+    opacity: 1;
+    color: rgb(161,12,18);
+    font-size: 10px;
+}
+
+
+.close-button:hover ::ng-deep .mat-button-focus-overlay {
+    background-color: transparent;
+}
+
+.fade-in {
+    animation: fadeIn ease .5s;
+    -webkit-animation: fadeIn ease .5s;
+    -moz-animation: fadeIn ease .5s;
+    -o-animation: fadeIn ease .5s;
+    -ms-animation: fadeIn ease .5s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
