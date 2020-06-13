@@ -21,7 +21,7 @@ import { JailViz } from './components/viz/jail/jail';
 
 import { Desktop } from './pages/desktop/desktop';
 import { Folder } from './pages/folder/folder';
-import { Article } from './pages/article/article';
+import { Post } from './pages/post/post';
 
 @NgModule({
     imports: [
@@ -53,7 +53,7 @@ import { Article } from './pages/article/article';
 	/* Pages */
 	Desktop,
 	Folder,
-	Article,
+	Post,
     ],
     //providers: [],
     bootstrap: [AppComponent]

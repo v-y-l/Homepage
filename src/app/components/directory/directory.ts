@@ -6,13 +6,13 @@ const FILES: File[] = [
     {
 	name: 'Systemic racism',
 	description: 'A visualization of the system through landmark events.',
-	type: FileType.Article,
+	type: FileType.Post,
 	id: 1
     },
     {
 	name: 'State budget breakdown',
 	description: 'Where is our tax money is going?',
-	type: FileType.Article,
+	type: FileType.Post,
 	id: 2
     },
 ];
