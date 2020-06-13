@@ -7,7 +7,6 @@ import { FileType } from '../../interfaces/file';
 @Component({
     selector: 'desktop',
     templateUrl: './desktop.ng.html',
-    styleUrls: ['./desktop.css']
 })
 export class Desktop {
     FileType = FileType;

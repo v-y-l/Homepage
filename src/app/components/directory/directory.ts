@@ -4,14 +4,14 @@ import { FileType, File } from '../../interfaces/file';
 
 const FILES: File[] = [
     {
-	name: 'State budget breakdown',
-	description: 'Where is our tax money is going?',
+	name: 'Systemic racism',
+	description: 'A visualization of the system through landmark events.',
 	type: FileType.Article,
 	id: 1
     },
     {
-	name: 'Systemic racism',
-	description: 'A visualization of the system through landmark events.',
+	name: 'State budget breakdown',
+	description: 'Where is our tax money is going?',
 	type: FileType.Article,
 	id: 2
     },

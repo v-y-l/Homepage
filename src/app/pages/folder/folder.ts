@@ -5,7 +5,6 @@ import { Router } from '@angular/router';
 @Component({
     selector: 'folder',
     templateUrl: './folder.ng.html',
-    styleUrls: ['./folder.css']
 })
 export class Folder {
 

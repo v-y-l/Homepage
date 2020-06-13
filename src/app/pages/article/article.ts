@@ -5,7 +5,6 @@ import { Router } from '@angular/router';
 @Component({
     selector: 'article',
     templateUrl: './article.ng.html',
-    styleUrls: ['./article.css']
 })
 export class Article {
     constructor(
