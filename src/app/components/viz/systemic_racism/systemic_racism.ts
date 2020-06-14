@@ -39,21 +39,20 @@ export class SystemicRacismViz implements AfterViewInit {
 	this.svgWidth = parseInt(this.svgContainer.style("width"));
 	this.svgHeight = parseInt(this.svgContainer.style("height"));
 
-	const maxCols = (this.svgWidth - this.SYSTEM_X - this.BLOCK_WIDTH*2) / (this.BLOCK_WIDTH + this.GAP_LENGTH);
-	const maxRows = (this.svgHeight - this.SYSTEM_Y - this.BLOCK_HEIGHT - this.GAP_LENGTH) / (this.BLOCK_HEIGHT + this.GAP_LENGTH);
-
-	this.initializeData(maxRows, maxCols);	
+	this.initializeData();	
 	this.initializeViz();
-	 d3.select(window).on(
-	     'resize', ()=>{
-		 const heightRatio = parseInt(this.svgContainer.style("height")) / this.svgHeight;
-		 const widthRatio = parseInt(this.svgContainer.style("width")) / this.svgWidth;
-	 	 d3.selectAll("rect")
-	 	     .attr("height", this.BLOCK_HEIGHT*heightRatio)
-	 	     .attr("width", this.BLOCK_WIDTH*widthRatio)
-	 	     .attr("x", (d:Block) => {return d.x*widthRatio})
-	 	     .attr("y", (d:Block) => {return d.y*heightRatio});
-	     }
+
+	d3.select(window).on(
+	    'resize', ()=>{
+		const heightRatio = parseInt(this.svgContainer.style("height")) / this.svgHeight;
+		const widthRatio = parseInt(this.svgContainer.style("width")) / this.svgWidth;
+		
+	 	d3.selectAll("rect")
+	 	    .attr("height", this.BLOCK_HEIGHT*heightRatio)
+	 	    .attr("width", this.BLOCK_WIDTH*widthRatio)
+	 	    .attr("x", (d:Block) => {return d.x*widthRatio})
+	 	    .attr("y", (d:Block) => {return d.y*heightRatio});
+	    }
 	);
     }
 
@@ -81,7 +80,12 @@ export class SystemicRacismViz implements AfterViewInit {
     }
 
     // Instantiates the dataset
-    initializeData(rows: number, cols: number) {
+    initializeData() {
+	const cols = (this.svgWidth - this.SYSTEM_X - this.BLOCK_WIDTH*2)
+	    / (this.BLOCK_WIDTH + this.GAP_LENGTH);
+	const rows = (this.svgHeight - this.SYSTEM_Y - this.BLOCK_HEIGHT - this.GAP_LENGTH)
+	    / (this.BLOCK_HEIGHT + this.GAP_LENGTH);
+
 	let delay = this.DELAY;
 	let x = this.SYSTEM_X;
 	for (let c = 0; c < cols; c++) {
