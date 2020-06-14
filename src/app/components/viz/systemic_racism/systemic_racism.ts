@@ -12,8 +12,14 @@ export class SystemicRacismViz implements AfterViewInit {
     readonly BLOCK_HEIGHT = 50;
     readonly BLOCK_WIDTH = 50;
     readonly GAP_LENGTH = 5
-    readonly DELAY = 500;
-    readonly DURATION = 1500;
+    readonly DELAY = 100;
+    readonly DURATION = 1000;
+    // This is the (x,y) where the block is dropped from.
+    readonly START_X = 20;
+    readonly START_Y = 20;
+    // This is the top-left corner of the system.
+    readonly SYSTEM_X = 20;
+    readonly SYSTEM_Y = 40;
     
     svgContainer;
     rect;
@@ -22,17 +28,17 @@ export class SystemicRacismViz implements AfterViewInit {
 	this.svgContainer = d3.select("svg.viz");
 	let svgWidth = parseInt(this.svgContainer.style("width"));
 	let svgHeight = parseInt(this.svgContainer.style("height"));
-	const maxCols = svgWidth / (this.BLOCK_WIDTH + this.GAP_LENGTH);
-	const maxRows = svgHeight / (this.BLOCK_HEIGHT + this.GAP_LENGTH);
+	const maxCols = (svgWidth - this.SYSTEM_Y) / (this.BLOCK_WIDTH + this.GAP_LENGTH);
+	const maxRows = (svgHeight - this.SYSTEM_X) / (this.BLOCK_HEIGHT + this.GAP_LENGTH);
 	this.buildSystem(maxRows, maxCols);
     }
 
     // Builds a grid of rows x cols blocks.
     buildSystem(rows: number, cols: number) {
 	let delay = this.DELAY;
-	let x = 20;
+	let x = this.SYSTEM_X;
 	for (let c = 0; c < cols; c++) {
-	    let y = 200;
+	    let y = this.SYSTEM_Y;
 	    for (let r = 0; r < rows; r++) {
 		this.addBlock(x, y, delay);
 		y += this.BLOCK_HEIGHT + this.GAP_LENGTH;
@@ -46,8 +52,8 @@ export class SystemicRacismViz implements AfterViewInit {
     // destination (x,y) after the delay.
     addBlock(x: number, y: number, delay: number) {
 	this.rect = this.svgContainer.append("rect")
-	    .attr("x", 20)
-	    .attr("y", 10)
+	    .attr("x", this.START_X)
+	    .attr("y", this.START_Y)
 	    .attr("width", this.BLOCK_WIDTH)
 	    .attr("height", this.BLOCK_HEIGHT)
 	    .attr("opacity", 0);
