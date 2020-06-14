@@ -9,23 +9,13 @@ import * as d3 from 'd3';
     encapsulation: ViewEncapsulation.None,
 })
 export class JailViz implements AfterContentInit {
-    radius = 10;
 
     ngAfterContentInit() {
-	d3.select('p').style('color', 'red');
-    }
-
-    colorMe() {
-	d3.select('button').style('color', 'red');
-    }
-
-    clicked(event: any) {
-	d3.select(event.target).append('circle')
-	    .attr('cx', event.x)
-	    .attr('cy', event.y)
-	    .attr('r', () => {
-		return this.radius;
-	    })
-	    .attr('fill', 'red');
+	var svgContainer = d3.select("svg.viz");
+	var rectangle = svgContainer.append("rect")
+	    .attr("x", 100)
+	    .attr("y", 100)
+	    .attr("width", 50)
+	    .attr("height", 50)
     }
 }
