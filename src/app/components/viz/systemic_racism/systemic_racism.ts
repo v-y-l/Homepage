@@ -62,10 +62,10 @@ export class SystemicRacismViz implements AfterViewInit {
 	const widthRatio = parseInt(this.svgContainer.style("width")) / this.svgWidth;
 	
 	d3.selectAll("rect")
-	    .attr("height", this.BLOCK_HEIGHT*heightRatio)
-	    .attr("width", this.BLOCK_WIDTH*widthRatio)
-	    .attr("x", (d:Block) => {return d.x*widthRatio})
-	    .attr("y", (d:Block) => {return d.y*heightRatio});
+	    .attr("height", this.BLOCK_HEIGHT * heightRatio)
+	    .attr("width", this.BLOCK_WIDTH * widthRatio)
+	    .attr("x", (d:Block) => {return d.x * widthRatio})
+	    .attr("y", (d:Block) => {return d.y * heightRatio});
     }
 
     // Instantiates the visualization based on the dataset
@@ -95,7 +95,7 @@ export class SystemicRacismViz implements AfterViewInit {
 
     // Instantiates the dataset
     initializeData() {
-	const cols = (this.svgWidth - this.SYSTEM_X - this.BLOCK_WIDTH*2)
+	const cols = (this.svgWidth - this.SYSTEM_X - this.BLOCK_WIDTH * 2)
 	    / (this.BLOCK_WIDTH + this.GAP_LENGTH);
 	const rows = (this.svgHeight - this.SYSTEM_Y - this.BLOCK_HEIGHT - this.GAP_LENGTH)
 	    / (this.BLOCK_HEIGHT + this.GAP_LENGTH);
@@ -105,8 +105,8 @@ export class SystemicRacismViz implements AfterViewInit {
 	for (let c = 0; c < cols; c++) {
 	    let y = this.SYSTEM_Y;
 	    for (let r = 0; r < rows; r++) {
-		const details = c + r + 2 <= this.details.length ?
-		    this.details[c+r] : {text: "default"};
+		const details = c*rows+r < this.details.length ?
+		    this.details[c*rows+r] : {text: "default"};
 		this.data.push({x, y, delay, details});
 		y += this.BLOCK_HEIGHT + this.GAP_LENGTH;
 		delay += this.DELAY;
