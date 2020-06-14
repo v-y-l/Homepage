@@ -15,10 +15,10 @@ export class SystemicRacismViz implements AfterViewInit {
     readonly DELAY = 100;
     readonly DURATION = 1000;
     // This is the (x,y) where the block is dropped from.
-    readonly START_X = 20;
+    readonly START_X = 40;
     readonly START_Y = 20;
     // This is the top-left corner of the system.
-    readonly SYSTEM_X = 20;
+    readonly SYSTEM_X = 40;
     readonly SYSTEM_Y = 100;
     
     svgContainer;
@@ -28,8 +28,8 @@ export class SystemicRacismViz implements AfterViewInit {
 	this.svgContainer = d3.select("svg.viz");
 	let svgWidth = parseInt(this.svgContainer.style("width"));
 	let svgHeight = parseInt(this.svgContainer.style("height"));
-	const maxCols = (svgWidth - this.SYSTEM_Y - this.BLOCK_HEIGHT - this.GAP_LENGTH) / (this.BLOCK_WIDTH + this.GAP_LENGTH);
-	const maxRows = (svgHeight - this.SYSTEM_X - this.BLOCK_WIDTH - this.GAP_LENGTH) / (this.BLOCK_HEIGHT + this.GAP_LENGTH);
+	const maxCols = (svgWidth - this.SYSTEM_X - this.BLOCK_WIDTH - this.GAP_LENGTH) / (this.BLOCK_WIDTH + this.GAP_LENGTH);
+	const maxRows = (svgHeight - this.SYSTEM_Y - this.BLOCK_HEIGHT - this.GAP_LENGTH) / (this.BLOCK_HEIGHT + this.GAP_LENGTH);
 	this.buildSystem(maxRows, maxCols);
     }
 
