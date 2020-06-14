@@ -44,10 +44,10 @@ export class SystemicRacismViz implements AfterViewInit {
 	 	const newArea = (parseInt(this.svgContainer.style("width")) - this.SYSTEM_X)*parseInt(this.svgContainer.style("height"));
 	 	const ratio = newArea / originalArea;
 	 	d3.selectAll("rect")
-	 	    .attr("height", this.BLOCK_HEIGHT*ratio)
-	 	    .attr("width", this.BLOCK_WIDTH*ratio)
-	 	     .attr("x", (d) => {d.x*ratio})
-	 	     .attr("y", (d) => {d.y*ratio})
+	 	     .attr("height", this.BLOCK_HEIGHT*ratio)
+	 	     .attr("width", this.BLOCK_WIDTH*ratio)
+	 	     .attr("x", (d:Point) => {return d.x*ratio})
+	 	     .attr("y", (d:Point) => {return d.y*ratio});
 	     }
 	);
     }
