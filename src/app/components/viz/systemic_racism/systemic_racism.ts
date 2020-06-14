@@ -45,9 +45,9 @@ export class SystemicRacismViz implements AfterViewInit {
 	 	const ratio = newArea / originalArea;
 	 	d3.selectAll("rect")
 	 	    .attr("height", this.BLOCK_HEIGHT*ratio)
-	 	    .attr("width", this.BLOCK_WIDTH*ratio);
-	 	     .attr("x", (d) => {d.x - this.GAP_LENGTH + this.GAP_LENGTH*ratio})
-	 	     .attr("y", (d) => {d.y - this.GAP_LENGTH + this.GAP_LENGTH*ratio})
+	 	    .attr("width", this.BLOCK_WIDTH*ratio)
+	 	     .attr("x", (d) => {d.x*ratio})
+	 	     .attr("y", (d) => {d.y*ratio})
 	     }
 	);
     }
