@@ -7,7 +7,7 @@ interface Block {
     x: number,
     y: number,
     delay: number,
-    details: Details,
+//    details: Details,
 };
 
 /** Information about the block. */
@@ -103,9 +103,10 @@ export class SystemicRacismViz implements AfterViewInit {
 	for (let c = 0; c < cols; c++) {
 	    let y = this.SYSTEM_Y;
 	    for (let r = 0; r < rows; r++) {
-		const details = c + r + 2 <= this.details.length ?
-		    this.details[c+r] : {text: "default"}};
-	    this.data.push({x, y, delay, details});
+//		const details = c + r + 2 <= this.details.length ?
+//		    this.details[c+r] : {text: "default"}};
+		this.data.push({x, y, delay})
+		//, details});
 		y += this.BLOCK_HEIGHT + this.GAP_LENGTH;
 		delay += this.DELAY;
 	    }
