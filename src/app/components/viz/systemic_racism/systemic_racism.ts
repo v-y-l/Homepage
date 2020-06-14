@@ -80,6 +80,8 @@ export class SystemicRacismViz implements AfterViewInit {
 	    .attr("width", this.BLOCK_WIDTH)
 	    .attr("height", this.BLOCK_HEIGHT)
 	    .attr("opacity", 0)
+	    .on("mouseover", this.handleMouseOver)
+            .on("mouseout", this.handleMouseOut)
 	    .transition()
 	    .delay(d => d.delay)
 	    .duration(this.DURATION)
@@ -110,5 +112,35 @@ export class SystemicRacismViz implements AfterViewInit {
 	    }
 	    x += this.BLOCK_WIDTH + this.GAP_LENGTH;
 	}
+    }
+
+    // Create Event Handlers for mouse
+    handleMouseOver(d, i) {  // Add interactivity
+        // Use D3 to select element, change color and size
+        d3.select(this).attr({
+            fill: "orange",
+            r: radius * 2
+        });
+
+        // Specify where to put label of text
+        this.svgContainer.append("text").attr({
+            id: "t" + d.x + "-" + d.y + "-" + i,  // Create an id for text so we can select it later for removing on mouseout
+            x: function() { return xScale(d.x) - 30; },
+            y: function() { return yScale(d.y) - 15; }
+        })
+            .text(function() {
+		return d.details.text;
+            });
+    }
+
+    handleMouseOut(d, i) {
+        // Use D3 to select element, change color back to normal
+        d3.select(this).attr({
+            fill: "black",
+            r: radius
+        });
+
+        // Select text by id and then remove
+        d3.select("#t" + d.x + "-" + d.y + "-" + i).remove();  // Remove text location
     }
 }
