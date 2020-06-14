@@ -11,7 +11,7 @@ export class SystemicRacismViz implements AfterViewInit {
 
     readonly BLOCK_HEIGHT = 50;
     readonly BLOCK_WIDTH = 50;
-    readonly GAP_LENGHT = 5
+    readonly GAP_LENGTH = 5
     readonly DELAY = 500;
     readonly DURATION = 1500;
     
@@ -20,14 +20,20 @@ export class SystemicRacismViz implements AfterViewInit {
 
     ngAfterViewInit() {
 	this.svgContainer = d3.select("svg.viz");
-	this.addBlock(20, 200, this.DELAY);
-	this.addBlock(20, 300, this.DELAY*2);
+	this.buildSystem(3,15);
     }
 
     buildSystem(rows: number, cols: number) {
+	let delay = this.DELAY;
+	let x = 20;
 	for (var c = 1; c <= cols; c++) {
+	    let y = 200;
 	    for (var r = 1; r <= rows; r++) {
+		this.addBlock(x, y, delay);
+		y += this.BLOCK_HEIGHT + this.GAP_LENGTH;
+		delay += this.DELAY;
 	    }
+	    x += this.BLOCK_WIDTH + this.GAP_LENGTH;
 	}
     }
 
