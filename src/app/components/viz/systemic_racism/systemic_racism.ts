@@ -3,11 +3,11 @@ import { Component, AfterViewInit } from '@angular/core';
 import * as d3 from 'd3';
 
 @Component({
-    selector: 'jail-viz',
-    templateUrl: './jail.ng.html',
-    styleUrls: ['./jail.css'],
+    selector: 'systemic-racism-viz',
+    templateUrl: './systemic_racism.ng.html',
+    styleUrls: ['./systemic_racism.css'],
 })
-export class JailViz implements AfterViewInit {
+export class SystemicRacismViz implements AfterViewInit {
     svgContainer;
 
     ngAfterViewInit() {

@@ -17,7 +17,7 @@ import { Panel } from './components/panel/panel';
 import { Shortcut } from './components/shortcut/shortcut';
 import { Header } from './components/header/header';
 import { Directory } from './components/directory/directory';
-import { JailViz } from './components/viz/jail/jail';
+import { SystemicRacismViz } from './components/viz/systemic_racism/systemic_racism';
 
 import { Desktop } from './pages/desktop/desktop';
 import { Folder } from './pages/folder/folder';
@@ -48,7 +48,7 @@ import { Post } from './pages/post/post';
 	Directory,
 
 	/* Viz */
-	JailViz,
+	SystemicRacismViz,
 
 	/* Pages */
 	Desktop,
