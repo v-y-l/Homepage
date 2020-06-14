@@ -2,7 +2,8 @@ import { Component, AfterViewInit } from '@angular/core';
 
 import * as d3 from 'd3';
 
-interface Point {
+/** Each block represents a historic event reinforcing racism. */
+interface Block {
     x: number,
     y: number,
     delay: number,
@@ -31,13 +32,18 @@ export class SystemicRacismViz implements AfterViewInit {
     svgHeight;
     svgContainer;
     rect;
-    data: Point[] = [];
+    data: Block[] = [];
 
     ngAfterViewInit() {
 	this.svgContainer = d3.select("svg.viz");
 	this.svgWidth = parseInt(this.svgContainer.style("width")) - this.SYSTEM_X;
 	this.svgHeight = parseInt(this.svgContainer.style("height"));
-	this.buildFullPageSystem();
+
+	const maxCols = (this.svgWidth - this.SYSTEM_X - this.BLOCK_WIDTH) / (this.BLOCK_WIDTH + this.GAP_LENGTH);
+	const maxRows = (this.svgHeight - this.SYSTEM_Y - this.BLOCK_HEIGHT - this.GAP_LENGTH) / (this.BLOCK_HEIGHT + this.GAP_LENGTH);
+
+	this.initializeData(maxRows, maxCols);	
+	this.initializeViz();
 	 d3.select(window).on(
 	     'resize', ()=>{
 		 const heightRatio = parseInt(this.svgContainer.style("height")) / this.svgHeight;
@@ -45,19 +51,18 @@ export class SystemicRacismViz implements AfterViewInit {
 	 	 d3.selectAll("rect")
 	 	     .attr("height", this.BLOCK_HEIGHT*heightRatio)
 	 	     .attr("width", this.BLOCK_WIDTH*widthRatio)
-	 	     .attr("x", (d:Point) => {return d.x*widthRatio})
-	 	     .attr("y", (d:Point) => {return d.y*heightRatio});
+	 	     .attr("x", (d:Block) => {return d.x*widthRatio})
+	 	     .attr("y", (d:Block) => {return d.y*heightRatio});
 	     }
 	);
     }
 
-    buildFullPageSystem() {
-	const maxCols = (this.svgWidth - this.SYSTEM_X - this.BLOCK_WIDTH) / (this.BLOCK_WIDTH + this.GAP_LENGTH);
-	const maxRows = (this.svgHeight - this.SYSTEM_Y - this.BLOCK_HEIGHT - this.GAP_LENGTH) / (this.BLOCK_HEIGHT + this.GAP_LENGTH);
-	this.initializeData(maxRows, maxCols);
+    // Instantiates the visualization based on the dataset
+    initializeViz() {
 	let sel = this.svgContainer
 	    .selectAll("rect")
 	    .data(this.data);
+
 	sel.enter()
 	    .append("rect")
 	    .attr("x", this.START_X)
@@ -71,10 +76,11 @@ export class SystemicRacismViz implements AfterViewInit {
 	    .attr("x", d => d.x)
 	    .attr("y", d => d.y)
 	    .attr("opacity", 1);
+
 	sel.exit();
     }
 
-    // Builds a grid of rows x cols blocks.
+    // Instantiates the dataset
     initializeData(rows: number, cols: number) {
 	let delay = this.DELAY;
 	let x = this.SYSTEM_X;
