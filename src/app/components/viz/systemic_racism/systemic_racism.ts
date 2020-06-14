@@ -120,12 +120,14 @@ export class SystemicRacismViz implements AfterViewInit {
         // Specify where to put label of text
         this.svgContainer.append("text")
 	    .text(d.details.text)
+	    .attr("fill", "rgba(198, 45, 205, 0.8)")
 	    .attr("x", 100)
 	    .attr("y", 100);     
     }
 
     handleMouseOut(d, i) {
         // Select text by id and then remove
-        d3.selectAll("text").remove();  // Remove text location
+        d3.selectAll("text")
+	    .remove();  // Remove text location
     }
 }
