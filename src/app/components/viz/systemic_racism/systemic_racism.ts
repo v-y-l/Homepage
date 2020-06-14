@@ -26,9 +26,13 @@ export class SystemicRacismViz implements AfterViewInit {
 
     ngAfterViewInit() {
 	this.svgContainer = d3.select("svg.viz");
+	this.buildFullPageSystem();
+    }
+
+    buildFullPageSystem() {
 	let svgWidth = parseInt(this.svgContainer.style("width")) - this.SYSTEM_X;
 	let svgHeight = parseInt(this.svgContainer.style("height"));
-	const maxCols = (svgWidth - this.SYSTEM_X - this.BLOCK_WIDTH - this.GAP_LENGTH) / (this.BLOCK_WIDTH + this.GAP_LENGTH);
+	const maxCols = (svgWidth - this.SYSTEM_X - this.BLOCK_WIDTH) / (this.BLOCK_WIDTH + this.GAP_LENGTH);
 	const maxRows = (svgHeight - this.SYSTEM_Y - this.BLOCK_HEIGHT - this.GAP_LENGTH) / (this.BLOCK_HEIGHT + this.GAP_LENGTH);
 	this.buildSystem(maxRows, maxCols);
     }
