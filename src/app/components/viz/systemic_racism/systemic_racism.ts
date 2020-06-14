@@ -20,15 +20,20 @@ export class SystemicRacismViz implements AfterViewInit {
 
     ngAfterViewInit() {
 	this.svgContainer = d3.select("svg.viz");
-	this.buildSystem(3,15);
+	let svgWidth = parseInt(this.svgContainer.style("width"));
+	let svgHeight = parseInt(this.svgContainer.style("height"));
+	const maxCols = svgWidth / (this.BLOCK_WIDTH + this.GAP_LENGTH);
+	const maxRows = svgHeight / (this.BLOCK_HEIGHT + this.GAP_LENGTH);
+	this.buildSystem(maxRows, maxCols);
     }
 
+    // Builds a grid of rows x cols blocks.
     buildSystem(rows: number, cols: number) {
 	let delay = this.DELAY;
 	let x = 20;
-	for (var c = 1; c <= cols; c++) {
+	for (let c = 0; c < cols; c++) {
 	    let y = 200;
-	    for (var r = 1; r <= rows; r++) {
+	    for (let r = 0; r < rows; r++) {
 		this.addBlock(x, y, delay);
 		y += this.BLOCK_HEIGHT + this.GAP_LENGTH;
 		delay += this.DELAY;
@@ -37,8 +42,8 @@ export class SystemicRacismViz implements AfterViewInit {
 	}
     }
 
-    // x is the destination x, y is the destination y
-    // delay is the time until transition
+    // Adds a single block from source (20,10) to
+    // destination (x,y) after the delay.
     addBlock(x: number, y: number, delay: number) {
 	this.rect = this.svgContainer.append("rect")
 	    .attr("x", 20)
