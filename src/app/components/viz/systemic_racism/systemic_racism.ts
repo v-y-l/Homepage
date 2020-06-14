@@ -43,17 +43,21 @@ export class SystemicRacismViz implements AfterViewInit {
 	this.initializeViz();
 
 	d3.select(window).on(
-	    'resize', ()=>{
-		const heightRatio = parseInt(this.svgContainer.style("height")) / this.svgHeight;
-		const widthRatio = parseInt(this.svgContainer.style("width")) / this.svgWidth;
-		
-	 	d3.selectAll("rect")
-	 	    .attr("height", this.BLOCK_HEIGHT*heightRatio)
-	 	    .attr("width", this.BLOCK_WIDTH*widthRatio)
-	 	    .attr("x", (d:Block) => {return d.x*widthRatio})
-	 	    .attr("y", (d:Block) => {return d.y*heightRatio});
-	    }
+	    'resize',
+	    this.resizeBlocks.bind(this)
 	);
+    }
+
+    // Function to call when the page gets resized
+    resizeBlocks() {
+	const heightRatio = parseInt(this.svgContainer.style("height")) / this.svgHeight;
+	const widthRatio = parseInt(this.svgContainer.style("width")) / this.svgWidth;
+	
+	d3.selectAll("rect")
+	    .attr("height", this.BLOCK_HEIGHT*heightRatio)
+	    .attr("width", this.BLOCK_WIDTH*widthRatio)
+	    .attr("x", (d:Block) => {return d.x*widthRatio})
+	    .attr("y", (d:Block) => {return d.y*heightRatio});
     }
 
     // Instantiates the visualization based on the dataset
