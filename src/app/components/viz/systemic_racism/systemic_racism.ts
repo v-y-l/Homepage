@@ -31,6 +31,16 @@ export class SystemicRacismViz implements AfterViewInit {
 	this.svgWidth = parseInt(this.svgContainer.style("width")) - this.SYSTEM_X;
 	this.svgHeight = parseInt(this.svgContainer.style("height"));
 	this.buildFullPageSystem();
+	d3.select(window).on(
+	    'resize', ()=>{
+		const originalArea = this.svgWidth * this.svgHeight;
+		const newArea = (parseInt(this.svgContainer.style("width")) - this.SYSTEM_X)*parseInt(this.svgContainer.style("height"));
+		const ratio = newArea / originalArea;
+		d3.selectAll("rect")
+		    .attr("height", this.BLOCK_HEIGHT*ratio)
+		    .attr("width", this.BLOCK_WIDTH*ratio)
+	    }
+	);
     }
 
     buildFullPageSystem() {
