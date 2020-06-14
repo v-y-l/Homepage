@@ -1,4 +1,4 @@
-import { Component, AfterContentInit, ViewEncapsulation } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 
 import * as d3 from 'd3';
 
@@ -6,13 +6,17 @@ import * as d3 from 'd3';
     selector: 'jail-viz',
     templateUrl: './jail.ng.html',
     styleUrls: ['./jail.css'],
-    encapsulation: ViewEncapsulation.None,
 })
-export class JailViz implements AfterContentInit {
+export class JailViz implements AfterViewInit {
+    svgContainer;
 
-    ngAfterContentInit() {
-	var svgContainer = d3.select("svg.viz");
-	var rectangle = svgContainer.append("rect")
+    ngAfterViewInit() {
+	this.svgContainer = d3.select("svg.viz");
+	this.initializeRectangles();
+    }
+
+    initializeRectangles() {
+	this.svgContainer.append("rect")
 	    .attr("x", 100)
 	    .attr("y", 100)
 	    .attr("width", 50)
