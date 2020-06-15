@@ -1,4 +1,18 @@
 .viz {
     width: 100%;
-    height: 90%;
+    height: 75%;
+}
+
+h1 {
+    color: black;
+    font-family: 'open-sans-light';
+    margin: 0;
+    padding: 10px;
+}
+
+h2 {
+    color: black;
+    font-family: 'open-sans-light';
+    margin: 0;
+    padding: 0px 10px 10px 10px;
 }
