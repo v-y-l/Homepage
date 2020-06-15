@@ -86,6 +86,12 @@ export class SystemicRacismViz implements AfterViewInit {
 	    .attr("width", this.BLOCK_WIDTH)
 	    .attr("height", this.BLOCK_HEIGHT)
 	    .attr("opacity", 0)
+	    .sort(function(a, b) {
+		if (a.delay < b.delay) {
+		    return 1;
+		}
+		return -1;
+	    })
 	    .on("mouseover", this.handleMouseOver)
             .on("mouseout", this.handleMouseOut)
 	    .on("click", this.handleClick.bind(this))
