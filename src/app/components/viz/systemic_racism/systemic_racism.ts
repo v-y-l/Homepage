@@ -44,6 +44,8 @@ export class SystemicRacismViz implements AfterViewInit {
 	{text: "test", citation: "cite"},
 	{text: "test-2", citation: "cite-2"}];
     radius = 6;
+    text = '';
+    citation = '';
 
     ngAfterViewInit() {
 	this.svgContainer = d3.select("svg.viz");
@@ -86,7 +88,7 @@ export class SystemicRacismViz implements AfterViewInit {
 	    .attr("opacity", 0)
 	    .on("mouseover", this.handleMouseOver)
             .on("mouseout", this.handleMouseOut)
-	    .on("click", this.handleClick)
+	    .on("click", this.handleClick.bind(this))
 	    .transition()
 	    .delay(d => d.delay)
 	    .duration(this.DURATION)
@@ -122,7 +124,9 @@ export class SystemicRacismViz implements AfterViewInit {
 
     // Change the color of the rectangle when you hover over it
     handleMouseOver(d, i) { 
-	d3.select(this as any).attr("fill", "red");
+	d3.select(this as any)
+	    .attr("fill", "red")
+	    .style("cursor", "pointer");
     }
 
     handleMouseOut(d, i) {
@@ -130,8 +134,7 @@ export class SystemicRacismViz implements AfterViewInit {
     }
 
     handleClick(d, i) {
-	console.log(d, i);
+	this.text = d.details.text;
+	this.citation = d.details.citation;
     }
-
-    
 }
