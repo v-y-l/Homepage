@@ -33,7 +33,7 @@ export class SystemicRacismViz implements AfterViewInit {
     readonly START_Y = 20;
     // This is the top-left corner of the system.
     readonly SYSTEM_X = 50;
-    readonly SYSTEM_Y = 80;
+    readonly SYSTEM_Y = 20;
 
     svgWidth;
     svgHeight;
