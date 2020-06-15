@@ -13,6 +13,7 @@ interface Block {
 /** Information about the block. */
 interface Details {
     text: string,
+    citation: string,
 }
 
 @Component({
@@ -39,7 +40,9 @@ export class SystemicRacismViz implements AfterViewInit {
     svgContainer;
     rect;
     data: Block[] = [];
-    details: Details[] = [{text: "test"}, {text: "test-2"}];
+    details: Details[] = [
+	{text: "test", citation: "cite"},
+	{text: "test-2", citation: "cite-2"}];
     radius = 6;
 
     ngAfterViewInit() {
@@ -81,8 +84,9 @@ export class SystemicRacismViz implements AfterViewInit {
 	    .attr("width", this.BLOCK_WIDTH)
 	    .attr("height", this.BLOCK_HEIGHT)
 	    .attr("opacity", 0)
-	    .on("mouseover", this.handleMouseOver.bind(this))
-            .on("mouseout", this.handleMouseOut.bind(this))
+	    .on("mouseover", this.handleMouseOver)
+            .on("mouseout", this.handleMouseOut)
+	    .on("click", this.handleClick)
 	    .transition()
 	    .delay(d => d.delay)
 	    .duration(this.DURATION)
@@ -106,7 +110,8 @@ export class SystemicRacismViz implements AfterViewInit {
 	    let y = this.SYSTEM_Y;
 	    for (let r = 0; r < rows; r++) {
 		const details = c*rows+r < this.details.length ?
-		    this.details[c*rows+r] : {text: "default"};
+		    this.details[c*rows+r] :
+		    {text: "default", citation: "citation"};
 		this.data.push({x, y, delay, details});
 		y += this.BLOCK_HEIGHT + this.GAP_LENGTH;
 		delay += this.DELAY;
@@ -115,19 +120,18 @@ export class SystemicRacismViz implements AfterViewInit {
 	}
     }
 
-    // Create Event Handlers for mouse
-    handleMouseOver(d, i) {  // Add interactivity
-        // Specify where to put label of text
-        this.svgContainer.append("text")
-	    .text(d.details.text)
-	    .attr("fill", "rgba(198, 45, 205, 0.8)")
-	    .attr("x", 100)
-	    .attr("y", 100);     
+    // Change the color of the rectangle when you hover over it
+    handleMouseOver(d, i) { 
+	d3.select(this as any).attr("fill", "red");
     }
 
     handleMouseOut(d, i) {
-        // Select text by id and then remove
-        d3.selectAll("text")
-	    .remove();  // Remove text location
+	d3.select(this as any).attr("fill", "black");
     }
+
+    handleClick(d, i) {
+	console.log(d, i);
+    }
+
+    
 }

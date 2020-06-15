@@ -2,3 +2,7 @@
     width: 100%;
     height: 97%;
 }
+
+.rect {
+    cursor: pointer;
+}
