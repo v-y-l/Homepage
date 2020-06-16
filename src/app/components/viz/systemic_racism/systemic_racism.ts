@@ -1,10 +1,6 @@
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Component, AfterViewInit, Inject } from '@angular/core';
-
-export interface DialogData {
-  animal: string;
-  name: string;
-}
+import { Details, DETAILS_DATA } from './data';
 
 import * as d3 from 'd3';
 
@@ -15,12 +11,6 @@ interface Block {
     delay: number,
     details: Details,
 };
-
-/** Information about the block. */
-interface Details {
-    text: string,
-    citation: string,
-}
 
 @Component({
     selector: 'systemic-racism-viz',
@@ -46,9 +36,7 @@ export class SystemicRacismViz implements AfterViewInit {
     svgContainer;
     rect;
     data: Block[] = [];
-    details: Details[] = [
-	{text: "test", citation: "cite"},
-	{text: "test-2", citation: "cite-2"}];
+    details: Details[] = DETAILS_DATA;
     radius = 6;
     text = '';
     citation = '';
@@ -155,7 +143,7 @@ export class SystemicRacismViz implements AfterViewInit {
     openDialog(): void {
 	const dialogRef = this.dialog.open(SystemicRacismDialog, {
 	    width: '80%',
-	    data: {name: 'hey', animal: 'there'}
+	    data: this.data[0],
 	});
 
 	dialogRef.afterClosed().subscribe(result => {
@@ -173,7 +161,7 @@ export class SystemicRacismDialog {
 
   constructor(
     public dialogRef: MatDialogRef<SystemicRacismViz>,
-    @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
+    @Inject(MAT_DIALOG_DATA) public data: Details) {}
 
   onNoClick(): void {
     this.dialogRef.close();
