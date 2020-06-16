@@ -7,7 +7,7 @@ h1 {
     color: black;
     font-family: 'open-sans-light';
     margin: 0;
-    padding: 20px 10px 10px 50px;
+    padding: 15px 10px 0px 50px;
 }
 
 h1 span {
@@ -18,5 +18,5 @@ h2 {
     color: black;
     font-family: 'open-sans-light';
     margin: 0;
-    padding: 0px 10px 5px 50px;
+    padding: 10px 10px 5px 50px;
 }
