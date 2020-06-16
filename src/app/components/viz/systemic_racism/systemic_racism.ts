@@ -154,7 +154,7 @@ export class SystemicRacismViz implements AfterViewInit {
     openDialog(): void {
 	const dialogRef = this.dialog.open(SystemicRacismDialog, {
 	    width: '80%',
-	    data: this.data[0],
+	    data: this.data[0], //update this
 	});
 
 	dialogRef.afterClosed().subscribe(result => {
