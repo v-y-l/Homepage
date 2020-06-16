@@ -1,4 +1,10 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Component, AfterViewInit, Inject } from '@angular/core';
+
+export interface DialogData {
+  animal: string;
+  name: string;
+}
 
 import * as d3 from 'd3';
 
@@ -47,6 +53,8 @@ export class SystemicRacismViz implements AfterViewInit {
     text = '';
     citation = '';
 
+    constructor(public dialog: MatDialog) {}
+
     ngAfterViewInit() {
 	this.svgContainer = d3.select("svg.viz");
 	this.svgWidth = parseInt(this.svgContainer.style("width"));
@@ -94,7 +102,7 @@ export class SystemicRacismViz implements AfterViewInit {
 	    })
 	    .on("mouseover", this.handleMouseOver)
             .on("mouseout", this.handleMouseOut)
-	    .on("click", this.handleClick.bind(this))
+	    .on("click", this.openDialog.bind(this))
 	    .transition()
 	    .delay(d => d.delay)
 	    .duration(this.DURATION)
@@ -143,4 +151,30 @@ export class SystemicRacismViz implements AfterViewInit {
 	this.text = d.details.text;
 	this.citation = d.details.citation;
     }
+
+    openDialog(): void {
+	const dialogRef = this.dialog.open(SystemicRacismDialog, {
+	    width: '250px',
+	    data: {name: 'hey', animal: 'there'}
+	});
+
+	dialogRef.afterClosed().subscribe(result => {
+	    console.log('The dialog was closed');
+	});
+    }
+}
+
+@Component({
+  selector: 'systemic-racism-dialog',
+  templateUrl: './dialog.ng.html',
+})
+export class SystemicRacismDialog {
+
+  constructor(
+    public dialogRef: MatDialogRef<SystemicRacismViz>,
+    @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
 }

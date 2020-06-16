@@ -9,12 +9,12 @@ const FILES: File[] = [
 	type: FileType.Post,
 	id: 1
     },
-    {
-	name: 'State budget breakdown',
-	description: 'Where is our tax money is going?',
-	type: FileType.Post,
-	id: 2
-    },
+    // {
+    // 	name: 'State budget breakdown',
+    // 	description: 'Where is our tax money is going?',
+    // 	type: FileType.Post,
+    // 	id: 2
+    // },
 ];
 
 @Component({
