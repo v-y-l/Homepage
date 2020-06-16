@@ -165,8 +165,9 @@ export class SystemicRacismViz implements AfterViewInit {
 }
 
 @Component({
-  selector: 'systemic-racism-dialog',
-  templateUrl: './dialog.ng.html',
+    selector: 'systemic-racism-dialog',
+    templateUrl: './dialog.ng.html',
+    styleUrls: ['./dialog.css'],
 })
 export class SystemicRacismDialog {
 
