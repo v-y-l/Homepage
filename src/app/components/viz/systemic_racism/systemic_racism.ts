@@ -151,10 +151,10 @@ export class SystemicRacismViz implements AfterViewInit {
 	this.citation = d.details.citation;
     }
 
-    openDialog(): void {
+    openDialog(d, i): void {
 	const dialogRef = this.dialog.open(SystemicRacismDialog, {
 	    width: '80%',
-	    data: this.data[0], //update this
+	    data: this.data[this.data.length-i-1],
 	});
 
 	dialogRef.afterClosed().subscribe(result => {
