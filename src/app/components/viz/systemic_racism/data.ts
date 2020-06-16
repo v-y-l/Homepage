@@ -1,4 +1,4 @@
-/** Information about the block. */
+/** Details about the block. */
 export interface Details {
     title: string,
     body: string,
@@ -11,7 +11,7 @@ export interface Citation {
     link: string,
 }
 
-export const DEFAULT_DATA: Details = {
+export const DEFAULT_DETAIL: Details = {
     title: 'Suggest a landmark event',
     body: 'Tweet at me',
     year: 0,
@@ -20,14 +20,14 @@ export const DEFAULT_DATA: Details = {
 
 };
 
-export const MORE_DATA: Details = {
+export const MORE_DETAIL: Details = {
     title: 'Resize me',
 	body: 'Resize and refresh, bro!',
 	year: 0,
 	citations: [],
 };
 
-export const DETAILS_DATA: Details[] = [
+export const DETAILS: Details[] = [
     {
 	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',

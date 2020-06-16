@@ -1,13 +1,12 @@
 <div class="dialog-container">
   <h1 mat-dialog-title>
-    {{data.details.title}}, {{data.details.year}}</h1>
+    {{block.details.title}}, {{block.details.year}}</h1>
   <div mat-dialog-content>
-    <p>{{data.details.body}}</p>
+    <p>{{block.details.body}}</p>
     <a href="w">Link</a>,
   </div>
   <div mat-dialog-actions>
     <button mat-button (click)="onNoClick()">Close</button>
     <button mat-button (click)="onNoClick()">Previous</button>
-    <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Next</button>
   </div>
 </div>

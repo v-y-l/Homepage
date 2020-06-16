@@ -1,6 +1,6 @@
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Component, AfterViewInit, Inject } from '@angular/core';
-import { Details, DETAILS_DATA, MORE_DATA, DEFAULT_DATA } from './data';
+import { Details, DETAILS, MORE_DETAIL, DEFAULT_DETAIL } from './data';
 
 import * as d3 from 'd3';
 
@@ -41,7 +41,7 @@ export class SystemicRacismViz implements AfterViewInit {
     svgContainer;
 
     blocks: Block[] = [];
-    details: Details[] = DETAILS_DATA;
+    details: Details[] = DETAILS;
 
     constructor(public dialog: MatDialog) {}
 
@@ -117,20 +117,7 @@ export class SystemicRacismViz implements AfterViewInit {
 	for (let c = 0; c < cols; c++) {
 	    let y = this.SYSTEM_Y;
 	    for (let r = 0; r < rows; r++) {
-		let details;
-		if (rows*cols <= this.details.length) {		    
-		    if (c*rows+r < this.details.length - 1) {
-			details = this.details[c*rows+r];
-		    } else {
-			details = MORE_DATA;
-		    }
-		} else {
-		    if (c*rows+r < this.details.length) {
-			details = this.details[c*rows+r];
-		    } else {
-			details = DEFAULT_DATA;
-		    }
-		}
+		const details = this.getDetail(rows, cols, r, c);
 		this.blocks.push({x, y, delay, details});
 		y += this.BLOCK_HEIGHT + this.GAP_LENGTH;
 		delay += this.DELAY;
@@ -138,6 +125,24 @@ export class SystemicRacismViz implements AfterViewInit {
 	    x += this.BLOCK_WIDTH + this.GAP_LENGTH;
 	}
     }
+
+    getDetail(rows, cols, c, r) {
+	let details;
+	if (rows*cols <= this.details.length) {		    
+	    if (c*rows+r < this.details.length - 1) {
+		details = this.details[c*rows+r];
+	    } else {
+		details = MORE_DETAIL;
+	    }
+	} else {
+	    if (c*rows+r < this.details.length) {
+		details = this.details[c*rows+r];
+	    } else {
+		details = DEFAULT_DETAIL;
+	    }
+	}
+	return details;
+    }    
 
     // Change the color of the rectangle when you hover over it
     handleMouseOver(d, i) { 
