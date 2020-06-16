@@ -19,27 +19,29 @@ interface Block {
 })
 export class SystemicRacismViz implements AfterViewInit {
 
+    // Block dimensions.
     readonly BLOCK_HEIGHT = 30;
     readonly BLOCK_WIDTH = 30;
+    // Distance between blocks.
     readonly GAP_LENGTH = 5
+    // Initial delay in ms before first block gets launched.
     readonly DELAY = 100;
+    // The transition time in ms.
     readonly DURATION = 1000;
-    // This is the (x,y) where the block is dropped from.
+    // Where the block will be dropped from.
     readonly START_X = 50;
     readonly START_Y = 20;
-    // This is the top-left corner of the system.
+    // The top-left corner of the system.
     readonly SYSTEM_X = 50;
     readonly SYSTEM_Y = 20;
 
+    // Useful for adjusting the viz so it's responsive
     svgWidth;
     svgHeight;
     svgContainer;
-    rect;
-    data: Block[] = [];
+
+    blocks: Block[] = [];
     details: Details[] = DETAILS_DATA;
-    radius = 6;
-    text = '';
-    citation = '';
 
     constructor(public dialog: MatDialog) {}
 
@@ -59,8 +61,10 @@ export class SystemicRacismViz implements AfterViewInit {
 
     // Function to call when the page gets resized
     resizeBlocks() {
-	const heightRatio = parseInt(this.svgContainer.style("height")) / this.svgHeight;
-	const widthRatio = parseInt(this.svgContainer.style("width")) / this.svgWidth;
+	const heightRatio =
+	    parseInt(this.svgContainer.style("height")) / this.svgHeight;
+	const widthRatio =
+	    parseInt(this.svgContainer.style("width")) / this.svgWidth;
 	
 	d3.selectAll("rect")
 	    .attr("height", this.BLOCK_HEIGHT * heightRatio)
@@ -73,7 +77,7 @@ export class SystemicRacismViz implements AfterViewInit {
     initializeViz() {
 	let sel = this.svgContainer
 	    .selectAll("rect")
-	    .data(this.data);
+	    .data(this.blocks);
 
 	sel.enter()
 	    .append("rect")
@@ -127,7 +131,7 @@ export class SystemicRacismViz implements AfterViewInit {
 			details = DEFAULT_DATA;
 		    }
 		}
-		this.data.push({x, y, delay, details});
+		this.blocks.push({x, y, delay, details});
 		y += this.BLOCK_HEIGHT + this.GAP_LENGTH;
 		delay += this.DELAY;
 	    }
@@ -146,15 +150,10 @@ export class SystemicRacismViz implements AfterViewInit {
 	d3.select(this as any).attr("fill", "black");
     }
 
-    handleClick(d, i) {
-	this.text = d.details.text;
-	this.citation = d.details.citation;
-    }
-
     openDialog(d, i): void {
 	const dialogRef = this.dialog.open(SystemicRacismDialog, {
 	    width: '80%',
-	    data: this.data[this.data.length-i-1],
+	    data: this.blocks[this.blocks.length-i-1],
 	});
 
 	dialogRef.afterClosed().subscribe(result => {
@@ -172,7 +171,7 @@ export class SystemicRacismDialog {
 
   constructor(
     public dialogRef: MatDialogRef<SystemicRacismViz>,
-    @Inject(MAT_DIALOG_DATA) public data: Block) {}
+    @Inject(MAT_DIALOG_DATA) public block: Block) {}
 
   onNoClick(): void {
     this.dialogRef.close();
