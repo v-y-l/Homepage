@@ -11,11 +11,42 @@ export interface Citation {
     link: string,
 }
 
+export const DEFAULT_DATA: Details = {
+    title: 'Suggest a landmark event',
+    body: 'Tweet at me',
+    year: 0,
+    citations: [],
+
+
+};
+
+export const MORE_DATA: Details = {
+    title: 'Resize me',
+	body: 'Resize and refresh, bro!',
+	year: 0,
+	citations: [],
+};
+
 export const DETAILS_DATA: Details[] = [
     {
 	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
 	year: 1619,
+	citations: [
+	    {
+		name: 'a',
+		link: 'b',
+	    },
+	    {
+		name: 'b',
+		link: 'c',
+	    }
+	],
+    },
+    {
+	title: 'Slavery in America b',
+	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
+	year: 1700,
 	citations: [
 	    {
 		name: 'a',

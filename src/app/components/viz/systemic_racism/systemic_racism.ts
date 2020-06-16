@@ -1,6 +1,6 @@
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Component, AfterViewInit, Inject } from '@angular/core';
-import { Details, DETAILS_DATA } from './data';
+import { Details, DETAILS_DATA, MORE_DATA, DEFAULT_DATA } from './data';
 
 import * as d3 from 'd3';
 
@@ -113,9 +113,20 @@ export class SystemicRacismViz implements AfterViewInit {
 	for (let c = 0; c < cols; c++) {
 	    let y = this.SYSTEM_Y;
 	    for (let r = 0; r < rows; r++) {
-		const details = c*rows+r < this.details.length ?
-		    this.details[c*rows+r] :
-		    {text: "default", citation: "citation"};
+		let details;
+		if (rows*cols <= this.details.length) {		    
+		    if (c*rows+r < this.details.length - 1) {
+			details = this.details[c*rows+r];
+		    } else {
+			details = MORE_DATA;
+		    }
+		} else {
+		    if (c*rows+r < this.details.length) {
+			details = this.details[c*rows+r];
+		    } else {
+			details = DEFAULT_DATA;
+		    }
+		}
 		this.data.push({x, y, delay, details});
 		y += this.BLOCK_HEIGHT + this.GAP_LENGTH;
 		delay += this.DELAY;
@@ -161,7 +172,7 @@ export class SystemicRacismDialog {
 
   constructor(
     public dialogRef: MatDialogRef<SystemicRacismViz>,
-    @Inject(MAT_DIALOG_DATA) public data: Details) {}
+    @Inject(MAT_DIALOG_DATA) public data: Block) {}
 
   onNoClick(): void {
     this.dialogRef.close();
