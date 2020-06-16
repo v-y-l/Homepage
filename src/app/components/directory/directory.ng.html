@@ -12,7 +12,7 @@
       class="table-cell table-header"
       mat-header-cell *matHeaderCellDef> Name </th>
     <td
-      class="table-cell"
+      class="table-cell table-body"
       mat-cell *matCellDef="let element"> {{element.name}} </td>
   </ng-container>
 
@@ -20,7 +20,7 @@
   <ng-container matColumnDef="description">
     <th class="table-cell table-header"
 	mat-header-cell *matHeaderCellDef fxHide.xs> Description </th>
-    <td class="table-cell"
+    <td class="table-cell table-body"
 	mat-cell *matCellDef="let element" fxHide.xs> {{element.description}} </td>
   </ng-container>
 </table>

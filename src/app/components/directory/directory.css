@@ -4,10 +4,15 @@
 
 .table-header {
     font-family: 'open-sans';
+    border-bottom-color: #fafafa;
+    font-size: medium;
+    color: black;
 }
 
-.table-cell {
+.table-body {
+    font-family: 'open-sans-light';
     border-bottom-color: #fafafa;
+    font-size: medium;
     color: black;
 }
 
