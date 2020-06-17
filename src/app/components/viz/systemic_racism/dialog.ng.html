@@ -5,7 +5,7 @@
     <p>{{block.details.body}}</p>
     <ng-container *ngFor="let citation of block.details.citations; let i = index">
       <a [href]="citation.link">{{citation.name}}</a>
-      <span *ngIf="i < block.details.citations.length - 1">●</span>
+      <span class="separator" *ngIf="i < block.details.citations.length - 1">,</span>
     </ng-container>
   </div>
   <div mat-dialog-actions>

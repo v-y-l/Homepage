@@ -5,3 +5,11 @@ h1 {
 p {
     margin: 0px 0px 10px 0px;
 }
+
+.separator {
+    margin: 0px 5px 0px 2px;
+}
+
+a:focus {
+    outline: none;
+}
