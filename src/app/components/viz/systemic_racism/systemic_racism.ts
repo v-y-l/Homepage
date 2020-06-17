@@ -18,7 +18,6 @@ interface Block {
     styleUrls: ['./systemic_racism.css'],
 })
 export class SystemicRacismViz implements AfterViewInit {
-
     // Block dimensions.
     readonly BLOCK_HEIGHT = 30;
     readonly BLOCK_WIDTH = 30;
@@ -166,10 +165,6 @@ export class SystemicRacismViz implements AfterViewInit {
 	const dialogRef = this.dialog.open(SystemicRacismDialog, {
 	    width: '80%',
 	    data: this.blocks[this.blocks.length-i-1],
-	});
-
-	dialogRef.afterClosed().subscribe(result => {
-	    console.log('The dialog was closed');
 	});
     }
 }

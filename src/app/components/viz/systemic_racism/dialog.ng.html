@@ -3,7 +3,10 @@
     {{block.details.title}}, {{block.details.year}}</h1>
   <div mat-dialog-content>
     <p>{{block.details.body}}</p>
-    <a href="w">Link</a>,
+    <ng-container *ngFor="let citation of block.details.citations; let i = index">
+      <a [href]="citation.link">{{citation.name}}</a>
+      <span *ngIf="i < block.details.citations.length - 1">●</span>
+    </ng-container>
   </div>
   <div mat-dialog-actions>
     <button mat-button (click)="onNoClick()">Close</button>
