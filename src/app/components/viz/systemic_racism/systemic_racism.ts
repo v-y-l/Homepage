@@ -180,7 +180,7 @@ export class SystemicRacismDialog {
     public dialogRef: MatDialogRef<SystemicRacismViz>,
     @Inject(MAT_DIALOG_DATA) public block: Block) {}
 
-  onNoClick(): void {
+  onClose(): void {
     this.dialogRef.close();
   }
 }
