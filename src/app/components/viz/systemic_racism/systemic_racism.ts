@@ -126,19 +126,26 @@ export class SystemicRacismViz implements AfterViewInit {
 	}
     }
 
+    // Returns a detail, which could be a block about history,
+    // a suggestion to tweet a detail at me, or a hint that if
+    // you expanded the page and refreshed it, you'd get more
+    // details.
     getDetail(rows, cols, c, r) {
 	let details;
-	if (rows*cols <= this.details.length) {		    
-	    if (c*rows+r < this.details.length - 1) {
-		details = this.details[c*rows+r];
-	    } else {
-		details = MORE_DETAIL;
-	    }
-	} else {
-	    if (c*rows+r < this.details.length) {
-		details = this.details[c*rows+r];
+	const totalBlocks = rows*cols;
+	const totalDetails = this.details.length;
+	let index = c*rows+r;
+	if (totalDetails < totalBlocks) {
+	    if (index < totalDetails) {
+		details = this.details[index];
 	    } else {
 		details = DEFAULT_DETAIL;
+	    }
+	} else {
+	    if (index < totalBlocks - 1) {
+		details = this.details[index];
+	    } else {
+		details = MORE_DETAIL;
 	    }
 	}
 	return details;
