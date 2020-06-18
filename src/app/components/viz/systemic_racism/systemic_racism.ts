@@ -107,11 +107,11 @@ export class SystemicRacismViz implements AfterViewInit {
 
     // Instantiates the dataset
     initializeData() {
-	const cols = Math.floor(
+	const cols = Math.ceil(
 	    (this.svgWidth - this.SYSTEM_X - this.BLOCK_WIDTH * 2)
 		/ (this.BLOCK_WIDTH + this.GAP_LENGTH)
 	);
-	const rows = Math.floor(
+	const rows = Math.ceil(
 	    (this.svgHeight - this.SYSTEM_Y - this.BLOCK_HEIGHT - this.GAP_LENGTH)
 		/ (this.BLOCK_HEIGHT + this.GAP_LENGTH)
 	);

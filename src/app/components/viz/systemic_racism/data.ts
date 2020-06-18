@@ -44,24 +44,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -89,24 +74,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -134,24 +104,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -179,24 +134,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -224,24 +164,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -269,24 +194,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -314,24 +224,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -359,24 +254,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -404,24 +284,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -449,24 +314,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -494,24 +344,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -539,24 +374,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -584,24 +404,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -629,24 +434,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -674,24 +464,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -719,24 +494,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -764,24 +524,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -809,24 +554,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -854,24 +584,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -899,24 +614,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -944,24 +644,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -989,24 +674,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -1034,24 +704,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -1079,24 +734,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -1124,24 +764,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -1169,24 +794,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -1214,24 +824,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -1259,24 +854,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -1304,24 +884,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -1349,24 +914,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -1394,9 +944,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -1408,10 +958,11 @@ export const DETAILS: Details[] = [
 	    }
 	],
     },
+    
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -1439,24 +990,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -1484,24 +1020,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -1529,24 +1050,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -1574,24 +1080,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -1619,24 +1110,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -1664,24 +1140,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1619,
 	citations: [
 	    {
 		name: 'a',
@@ -1709,24 +1170,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Slavery in America b',
+	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 1999,
 	citations: [
 	    {
 		name: 'a',
@@ -1741,82 +1187,7 @@ export const DETAILS: Details[] = [
     {
 	title: 'Slavery in America',
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1619,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1619,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
-	citations: [
-	    {
-		name: 'a',
-		link: 'b',
-	    },
-	    {
-		name: 'b',
-		link: 'c',
-	    }
-	],
-    },
-    {
-	title: 'Slavery in America b',
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
-	year: 1700,
+	year: 2000,
 	citations: [
 	    {
 		name: 'a',
@@ -1829,3 +1200,6 @@ export const DETAILS: Details[] = [
 	],
     },
 ];
+
+console.log('yo');
+console.log(DETAILS.length);
