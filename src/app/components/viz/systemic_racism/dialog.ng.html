@@ -13,8 +13,14 @@
     </ng-container>
   </div>
   <div mat-dialog-actions>
-    <button mat-button (click)="onPrevious()">Previous</button>
-    <button mat-button (click)="onNext()">Next</button>
+    <button
+      mat-button
+      [disabled]="blockIndex === 0"
+      (click)="onPrevious()">Previous</button>
+    <button
+      mat-button
+      [disabled]="blockIndex === data.blocks.length - 1"
+      (click)="onNext()">Next</button>
     <button mat-button (click)="onClose()">Close</button>
   </div>
 </div>

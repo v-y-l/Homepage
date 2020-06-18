@@ -193,10 +193,10 @@ export class SystemicRacismDialog implements OnInit {
     }
 
     onNext(): void {
-	this.blockIndex -= 1;
+	this.blockIndex += 1;
     }
 
     onPrevious(): void {
-	this.blockIndex += 1;
+	this.blockIndex -= 1;
     }
 }
