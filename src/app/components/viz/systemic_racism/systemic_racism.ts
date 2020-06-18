@@ -1,5 +1,5 @@
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { Component, AfterViewInit, Inject } from '@angular/core';
+import { Component, AfterViewInit, Inject, OnInit } from '@angular/core';
 import { Details, DETAILS, MORE_DETAIL, DEFAULT_DETAIL } from './data';
 
 import * as d3 from 'd3';
@@ -164,7 +164,10 @@ export class SystemicRacismViz implements AfterViewInit {
     openDialog(d, i): void {
 	const dialogRef = this.dialog.open(SystemicRacismDialog, {
 	    width: '80%',
-	    data: this.blocks[this.blocks.length-i-1],
+	    data: {
+		index: this.blocks.length - i - 1,
+		blocks: this.blocks,
+	    },
 	});
     }
 }
@@ -174,13 +177,26 @@ export class SystemicRacismViz implements AfterViewInit {
     templateUrl: './dialog.ng.html',
     styleUrls: ['./dialog.css'],
 })
-export class SystemicRacismDialog {
+export class SystemicRacismDialog implements OnInit {
+    blockIndex;
 
-  constructor(
-    public dialogRef: MatDialogRef<SystemicRacismViz>,
-    @Inject(MAT_DIALOG_DATA) public block: Block) {}
+    constructor(
+	public dialogRef: MatDialogRef<SystemicRacismViz>,
+	@Inject(MAT_DIALOG_DATA) public data: any) {}
 
-  onClose(): void {
-    this.dialogRef.close();
-  }
+    ngOnInit() {
+	this.blockIndex = this.data.index;
+    }
+
+    onClose(): void {
+      this.dialogRef.close();
+    }
+
+    onNext(): void {
+	this.blockIndex -= 1;
+    }
+
+    onPrevious(): void {
+	this.blockIndex += 1;
+    }
 }

@@ -1,16 +1,20 @@
 <div class="dialog-container">
   <h1 mat-dialog-title>
-    {{block.details.title}}, {{block.details.year}}</h1>
+    {{data.blocks[blockIndex].details.title}},
+    {{data.blocks[blockIndex].details.year}}</h1>
   <div mat-dialog-content>
-    <p>{{block.details.body}}</p>
-    <ng-container *ngFor="let citation of block.details.citations; let i = index">
+    <p>{{data.blocks[blockIndex].details.body}}</p>
+    <ng-container
+	*ngFor="let citation of data.blocks[blockIndex].details.citations;
+		let i = index">
       <a [href]="citation.link">{{citation.name}}</a>
-      <span class="separator" *ngIf="i < block.details.citations.length - 1">,</span>
+      <span class="separator"
+	    *ngIf="i < data.blocks[blockIndex].details.citations.length - 1">,</span>
     </ng-container>
   </div>
   <div mat-dialog-actions>
-    <button mat-button (click)="previous()">Previous</button>
-    <button mat-button (click)="next()">Next</button>
+    <button mat-button (click)="onPrevious()">Previous</button>
+    <button mat-button (click)="onNext()">Next</button>
     <button mat-button (click)="onClose()">Close</button>
   </div>
 </div>
