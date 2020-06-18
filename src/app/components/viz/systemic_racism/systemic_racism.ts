@@ -129,7 +129,7 @@ export class SystemicRacismViz implements AfterViewInit {
     // a suggestion to tweet a detail at me, or a hint that if
     // you expanded the page and refreshed it, you'd get more
     // details.
-    getDetail(rows, cols, c, r) {
+    getDetail(rows, cols, r, c) {
 	let details;
 	const totalBlocks = rows*cols;
 	const totalDetails = this.details.length;

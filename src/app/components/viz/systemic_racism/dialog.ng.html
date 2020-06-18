@@ -1,7 +1,8 @@
 <div class="dialog-container">
   <h1 mat-dialog-title>
-    {{data.blocks[blockIndex].details.title}},
-    {{data.blocks[blockIndex].details.year}}</h1>
+    {{data.blocks[blockIndex].details.title}}
+    <span *ngIf="data.blocks[blockIndex].details.year > 1">
+    {{data.blocks[blockIndex].details.year}}</span></h1>
   <div mat-dialog-content>
     <p>{{data.blocks[blockIndex].details.body}}</p>
     <ng-container
