@@ -11,3 +11,8 @@
     font-family: 'open-sans-bold';
     color: white;
 }
+
+.twitter {
+    width: 22px;
+    cursor: pointer;
+}
