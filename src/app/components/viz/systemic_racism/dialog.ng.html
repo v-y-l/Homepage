@@ -1,16 +1,16 @@
 <div class="dialog-container">
   <h1 mat-dialog-title>
-    {{data.blocks[blockIndex].details.title}}
-    <span *ngIf="data.blocks[blockIndex].details.year > 1">
-    {{data.blocks[blockIndex].details.year}}</span></h1>
+    {{data.events[blockIndex].details.title}}
+    <span *ngIf="data.events[blockIndex].details.year > 1">
+    {{data.events[blockIndex].details.year}}</span></h1>
   <div mat-dialog-content>
-    <p>{{data.blocks[blockIndex].details.body}}</p>
+    <p>{{data.events[blockIndex].details.body}}</p>
     <ng-container
-	*ngFor="let citation of data.blocks[blockIndex].details.citations;
+	*ngFor="let citation of data.events[blockIndex].details.citations;
 		let i = index">
       <a [href]="citation.link">{{citation.name}}</a>
       <span class="separator"
-	    *ngIf="i < data.blocks[blockIndex].details.citations.length - 1">,</span>
+	    *ngIf="i < data.events[blockIndex].details.citations.length - 1">,</span>
     </ng-container>
   </div>
   <div mat-dialog-actions>
@@ -20,7 +20,8 @@
       (click)="onPrevious()">Previous</button>
     <button
       mat-button
-      [disabled]="blockIndex === data.blocks.length - 1"
+      [disabled]="blockIndex === data.events.length - 1 ||
+		  blockIndex === data.maxBlocks - 1"
       (click)="onNext()">Next</button>
     <button mat-button (click)="onClose()">Close</button>
   </div>

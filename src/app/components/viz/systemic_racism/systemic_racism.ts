@@ -4,8 +4,8 @@ import { Details, DETAILS, MORE_DETAIL, DEFAULT_DETAIL } from './data';
 
 import * as d3 from 'd3';
 
-/** Each block represents a historic event reinforcing racism. */
-interface Block {
+/** Each event represents a historic event reinforcing racism. */
+interface Event {
     x: number,
     y: number,
     delay: number,
@@ -39,7 +39,8 @@ export class SystemicRacismViz implements AfterViewInit {
     svgHeight;
     svgContainer;
 
-    blocks: Block[] = [];
+    events: Event[] = [];
+    totalBlocks: number;
     details: Details[] = DETAILS;
 
     constructor(public dialog: MatDialog) {}
@@ -68,15 +69,15 @@ export class SystemicRacismViz implements AfterViewInit {
 	d3.selectAll("rect")
 	    .attr("height", this.BLOCK_HEIGHT * heightRatio)
 	    .attr("width", this.BLOCK_WIDTH * widthRatio)
-	    .attr("x", (d:Block) => {return d.x * widthRatio})
-	    .attr("y", (d:Block) => {return d.y * heightRatio});
+	    .attr("x", (d:Event) => {return d.x * widthRatio})
+	    .attr("y", (d:Event) => {return d.y * heightRatio});
     }
 
     // Instantiates the visualization based on the dataset
     initializeViz() {
 	let sel = this.svgContainer
 	    .selectAll("rect")
-	    .data(this.blocks);
+	    .data(this.events);
 
 	sel.enter()
 	    .append("rect")
@@ -110,14 +111,14 @@ export class SystemicRacismViz implements AfterViewInit {
 	    / (this.BLOCK_WIDTH + this.GAP_LENGTH);
 	const rows = (this.svgHeight - this.SYSTEM_Y - this.BLOCK_HEIGHT - this.GAP_LENGTH)
 	    / (this.BLOCK_HEIGHT + this.GAP_LENGTH);
-
+	this.totalBlocks = rows*cols;
 	let delay = this.DELAY;
 	let x = this.SYSTEM_X;
 	for (let c = 0; c < cols; c++) {
 	    let y = this.SYSTEM_Y;
 	    for (let r = 0; r < rows; r++) {
 		const details = this.getDetail(rows, cols, r, c);
-		this.blocks.push({x, y, delay, details});
+		this.events.push({x, y, delay, details});
 		y += this.BLOCK_HEIGHT + this.GAP_LENGTH;
 		delay += this.DELAY;
 	    }
@@ -131,17 +132,16 @@ export class SystemicRacismViz implements AfterViewInit {
     // details.
     getDetail(rows, cols, r, c) {
 	let details;
-	const totalBlocks = rows*cols;
 	const totalDetails = this.details.length;
 	let index = c*rows+r;
-	if (totalDetails < totalBlocks) {
+	if (totalDetails < this.totalBlocks) {
 	    if (index < totalDetails) {
 		details = this.details[index];
 	    } else {
 		details = DEFAULT_DETAIL;
 	    }
 	} else {
-	    if (index < totalBlocks - 1) {
+	    if (index < this.totalBlocks - 1) {
 		details = this.details[index];
 	    } else {
 		details = MORE_DETAIL;
@@ -165,8 +165,9 @@ export class SystemicRacismViz implements AfterViewInit {
 	const dialogRef = this.dialog.open(SystemicRacismDialog, {
 	    width: '80%',
 	    data: {
-		index: this.blocks.length - i - 1,
-		blocks: this.blocks,
+		index: this.events.length - i - 1,
+		events: this.events,
+		totalBlocks: this.totalBlocks,
 	    },
 	});
     }
