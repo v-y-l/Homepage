@@ -51,11 +51,11 @@ export class SystemicRacismViz implements AfterViewInit {
 	this.svgHeight = parseInt(this.svgContainer.style("height"));
 
 	this.initializeData();	
-	this.initializeViz();
+	setTimeout(this.initializeViz.bind(this), 0);
 
 	d3.select(window).on(
-	    'resize',
-	    this.resizeBlocks.bind(this)
+	     'resize',
+	     this.resizeBlocks.bind(this)
 	);
     }
 
