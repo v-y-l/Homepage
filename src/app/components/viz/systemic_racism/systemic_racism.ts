@@ -50,7 +50,8 @@ export class SystemicRacismViz implements AfterViewInit {
 	this.svgWidth = parseInt(this.svgContainer.style("width"));
 	this.svgHeight = parseInt(this.svgContainer.style("height"));
 
-	this.initializeData();	
+	this.initializeData();
+	/** https://mathiasbynens.be/notes/settimeout-onload */
 	setTimeout(this.initializeViz.bind(this), 0);
 
 	d3.select(window).on(
