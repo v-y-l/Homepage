@@ -21,7 +21,7 @@
     <button
       mat-button
       [disabled]="blockIndex === data.events.length - 1 ||
-		  blockIndex === data.maxBlocks - 1"
+		  blockIndex === data.totalBlocks - 1"
       (click)="onNext()">Next</button>
     <button mat-button fxHide.lt-md (click)="onClose()">Close</button>
   </div>
