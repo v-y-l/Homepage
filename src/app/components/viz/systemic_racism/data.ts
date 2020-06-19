@@ -12,7 +12,7 @@ export interface Citation {
 }
 
 export const DEFAULT_DETAIL: Details = {
-    title: 'Thank you for reading.',
+    title: 'Thank you for reading',
     body: 'You\'ve read all of the landmark events that contribute to systemic racism in America that I know of. Please tweet at me using #systemicracismviz if I\'ve missed any events, made any typos, or committed any bugs. This is a labor of love, so while I may not update the visualization right away, I certainly appreciate your feedback.',
     year: 0,
     citations: [],
@@ -21,7 +21,7 @@ export const DEFAULT_DETAIL: Details = {
 };
 
 export const MORE_DETAIL: Details = {
-    title: 'There are more events that don\'t fit the screen.',
+    title: 'There are more events that don\'t fit the screen',
 	body: 'Believe it or not, the injustices of systemic racism are too numerous to fit your screen. Please resize your browser and refresh or use a larger device.',
 	year: 0,
 	citations: [],
