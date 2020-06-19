@@ -40,7 +40,7 @@ export const DETAILS: Details[] = [
 		link: 'https://www.nps.gov/jame/learn/historyculture/african-americans-at-jamestown.htm',
 	    },
 	    {
-		source: 'Time Magazine'
+		source: 'Time Magazine',
 		name: 'Africans in Virginia mark turning point for slavery in America',
 		link: 'https://time.com/5653369/august-1619-jamestown-history',
 	    },
