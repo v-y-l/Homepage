@@ -8,9 +8,10 @@
     <ng-container
 	*ngFor="let citation of data.events[blockIndex].details.citations;
 		let i = index">
+      {{citation.source}}: 
       <a [href]="citation.link" target="_blank">{{citation.name}}</a>
       <span class="separator"
-	    *ngIf="i < data.events[blockIndex].details.citations.length - 1">,</span>
+	    *ngIf="i < data.events[blockIndex].details.citations.length - 1">, </span>
     </ng-container>
   </div>
   <div mat-dialog-actions>

@@ -87,6 +87,7 @@ export class SystemicRacismViz implements AfterViewInit {
 	    .attr("width", this.BLOCK_WIDTH)
 	    .attr("height", this.BLOCK_HEIGHT)
 	    .attr("opacity", 0)
+	    .attr("id", (d, i) => "element" + i)
 	    .sort(function(a, b) {
 		if (a.delay < b.delay) {
 		    return 1;
@@ -166,13 +167,14 @@ export class SystemicRacismViz implements AfterViewInit {
 	d3.select(this as any).attr("fill", "black");
     }
 
-    openDialog(d, i): void {
+    openDialog(d, i) {
 	const dialogRef = this.dialog.open(SystemicRacismDialog, {
 	    width: '80%',
 	    data: {
 		index: this.events.length - i - 1,
 		events: this.events,
 		totalBlocks: this.totalBlocks,
+		svgContainer: this.svgContainer,
 	    },
 	});
     }
@@ -192,17 +194,26 @@ export class SystemicRacismDialog implements OnInit {
 
     ngOnInit() {
 	this.blockIndex = this.data.index;
+	this.updateVisit();
     }
 
-    onClose(): void {
+    onClose() {
       this.dialogRef.close();
     }
 
-    onNext(): void {
+    onNext() {
 	this.blockIndex += 1;
+	this.updateVisit();
     }
 
-    onPrevious(): void {
+    onPrevious() {
 	this.blockIndex -= 1;
+	this.updateVisit();
+    }
+
+    updateVisit() {
+	this.data.svgContainer
+	    .select("#element"+this.blockIndex)
+	    .attr("opacity", .5);
     }
 }
