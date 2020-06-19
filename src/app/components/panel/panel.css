@@ -1,12 +1,6 @@
 .panel {
-    width: 100%;
+    margin: 20px;
     height: 79%;
-}
-
-@media screen and (max-width: 840px) {
-    .panel {
-	height: 83%;
-    }
 }
 
 .header {

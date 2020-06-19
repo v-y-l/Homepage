@@ -1,7 +1,28 @@
+div.mat-dialog-content {
+    max-height: 250px;
+}
+
 a {
     outline: none;
 }
 
 h1 {
     margin-bottom: 0px;
+}
+
+div.mat-dialog-content {
+    margin: 10px 0px;
+    padding: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+div.button-container {
+    padding-top: 10px;
+}
+
+div.citations-container {
+    width: 100%;
 }
