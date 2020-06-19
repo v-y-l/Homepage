@@ -52,7 +52,7 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'The first racist gun laws',
+	title: 'The first racist gun law',
 	year: 1639,
 	body: 'This year saw the instutition of two racist weapons statutes in Virginia: the first "prohibits negroes, slave and free, from carrying weapons including clubs," while the second states that "all such free Mulattoes, Negroes and Indians...shall appear without arms". Altogether an unsurprising set of laws, seeing as Native Americans saw the colonists as invaders and reacted to their settlement by massacring almost 400 colonists in 1622, a third of the Jamestown population.',
 	citations: [
@@ -60,6 +60,18 @@ export const DETAILS: Details[] = [
 		source: 'Sedgwick County',
 		name: 'The Racist Origins of US Gun Control',
 		link: 'https://www.sedgwickcounty.org/media/29093/the-racist-origins-of-us-gun-control.pdf',
+	    },
+	],
+    },
+    {
+	title: 'The first slave in the eyes of the law',
+	year: 1640,
+	body: 'White indentured servants and black slaves shared a lot in common as a people who suffered under abusive masters, wanted to take a break from back-breaking farm labor, and missed their families. On July 1640, three servants escaped to Maryland and were captured there: Victor, "a Dutchman," and James Gregory, "a Scotchman," were sentenced to be whipped, with four years were added to their indentures. The third servant, "a negro named John Punch," was made a slave for life by Virginia courts.',
+	citations: [
+	    {
+		source: 'Encyclopedia Virginia in partnership with Library of Virginia',
+		name: 'Runaway Slaves and Servants in Colonial Virginia',
+		link: 'https://www.encyclopediavirginia.org/Runaway_Slaves_and_Servants_in_Colonial_Virginia',
 	    },
 	],
     },
