@@ -170,7 +170,6 @@ export class SystemicRacismViz implements AfterViewInit {
     openDialog(d, i) {
 	const dialogRef = this.dialog.open(SystemicRacismDialog, {
 	    width: '80%',
-	    maxHeight: '70%',
 	    data: {
 		index: this.events.length - i - 1,
 		events: this.events,

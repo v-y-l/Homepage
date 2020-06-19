@@ -1,5 +1,5 @@
 div.mat-dialog-content {
-    max-height: 300px;
+    max-height: 250px;
 }
 
 a {
@@ -10,11 +10,19 @@ h1 {
     margin-bottom: 0px;
 }
 
-div.mat-dialog-actions {
+div.mat-dialog-content {
+    margin: 10px 0px;
     padding: 0px;
-    margin-top: 10px;
+}
+
+p {
+    margin: 0px;
 }
 
 div.button-container {
-    padding: 10px;
+    padding-top: 10px;
+}
+
+div.citations-container {
+    width: 100%;
 }
