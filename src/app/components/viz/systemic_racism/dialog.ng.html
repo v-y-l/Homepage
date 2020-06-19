@@ -1,0 +1,28 @@
+<div class="dialog-container">
+  <h1 mat-dialog-title>
+    {{data.events[blockIndex].details.title}}
+    <span *ngIf="data.events[blockIndex].details.year > 1">
+    {{data.events[blockIndex].details.year}}</span></h1>
+  <div mat-dialog-content>
+    <p>{{data.events[blockIndex].details.body}}</p>
+    <ng-container
+	*ngFor="let citation of data.events[blockIndex].details.citations;
+		let i = index">
+      <a [href]="citation.link" target="_blank">{{citation.name}}</a>
+      <span class="separator"
+	    *ngIf="i < data.events[blockIndex].details.citations.length - 1">,</span>
+    </ng-container>
+  </div>
+  <div mat-dialog-actions>
+    <button
+      mat-button
+      [disabled]="blockIndex === 0"
+      (click)="onPrevious()">Previous</button>
+    <button
+      mat-button
+      [disabled]="blockIndex === data.events.length - 1 ||
+		  blockIndex === data.totalBlocks - 1"
+      (click)="onNext()">Next</button>
+    <button mat-button fxHide.lt-md (click)="onClose()">Close</button>
+  </div>
+</div>

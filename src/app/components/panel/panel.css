@@ -3,6 +3,12 @@
     height: 75%;
 }
 
+@media screen and (max-width: 840px) {
+    .panel {
+	height: 83%;
+    }
+}
+
 .header {
     color: black;
     background: #fafafa;

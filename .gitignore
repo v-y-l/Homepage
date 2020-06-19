@@ -4,6 +4,7 @@
 
 # Emacs autosave
 \#*#
+.\#*
 
 # Dependencies
 node_modules
