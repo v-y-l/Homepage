@@ -66,13 +66,25 @@ export const DETAILS: Details[] = [
     {
 	title: 'The first slave in the eyes of the law',
 	year: 1640,
-	body: 'White indentured servants and black slaves shared a lot in common as a people who suffered under abusive masters, wanted to take a break from back-breaking farm labor, and missed their families. On July 1640, three servants escaped to Maryland and were captured there: Victor, "a Dutchman," and James Gregory, "a Scotchman," were sentenced to be whipped, with four years were added to their indentures. The third servant, "a negro named John Punch," was made a slave for life by Virginia courts.',
+	body: 'White indentured servants and black slaves shared a lot in common as a people who suffered under abusive masters, wanted to take a break from back-breaking farm labor, and missed their families. On July 1640, three servants escaped to Maryland and were captured there: Victor, "a Dutchman," and James Gregory, "a Scotchman," were sentenced to be whipped, with four years were added to their indentures. The third servant, "a negro named John Punch," was made a slave for life by the Virginia courts.',
 	citations: [
 	    {
-		source: 'Encyclopedia Virginia in partnership with Library of Virginia',
+		source: 'Encyclopedia Virginia in partnership with the Library of Virginia',
 		name: 'Runaway Slaves and Servants in Colonial Virginia',
 		link: 'https://www.encyclopediavirginia.org/Runaway_Slaves_and_Servants_in_Colonial_Virginia',
 	    },
 	],
     },
+    {
+	title: 'Slavery is now inheritable',
+	year: 1662,
+	body: 'Whereas some doubts have arisen whether children got by any Englishman upon a Negro woman should be slave or free, be it therefore enacted and declared by this present Grand Assembly, that all children born in this country shall be held bond or free only according to the condition of the mother; and that if any Christian shall commit fornication with a Negro man or woman, he or she so offending shall pay double the fines imposed by the former act.',
+	citations: [
+	    {
+		source: 'Swarthmore College',
+		name: 'Virginia Slave Laws',
+		link: 'https://www.swarthmore.edu/SocSci/bdorsey1/41docs/24-sla.html',
+	    },
+	],
+    }
 ];
