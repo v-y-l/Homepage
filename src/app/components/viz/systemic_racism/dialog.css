@@ -1,7 +1,20 @@
+div.mat-dialog-content {
+    max-height: 300px;
+}
+
 a {
     outline: none;
 }
 
 h1 {
     margin-bottom: 0px;
+}
+
+div.mat-dialog-actions {
+    padding: 0px;
+    margin-top: 10px;
+}
+
+div.button-container {
+    padding: 10px;
 }
