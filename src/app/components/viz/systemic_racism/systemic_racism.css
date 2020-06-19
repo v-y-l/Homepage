@@ -20,3 +20,9 @@ h2 {
     margin: 0;
     padding: 10px 10px 5px 50px;
 }
+
+@media screen and (max-width: 840px) {
+    .viz {
+	height: 65%;
+    }
+}
