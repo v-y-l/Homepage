@@ -14,7 +14,7 @@ export interface Citation {
 
 export const DEFAULT_DETAIL: Details = {
     title: 'Thank you for reading',
-    body: 'You\'ve read all of the landmark events that contribute to systemic racism in America that I know of. Please tweet at me using #systemicracismviz if I\'ve missed any events, made any typos, or committed any bugs. This is a labor of love, so while I may not update the visualization right away, I certainly appreciate your feedback.',
+    body: 'You\'ve read all of the landmark events that contribute to systemic racism in America that I know of. Please tweet at me using #systemicracismviz if I\'ve missed any events, made any typos, or committed any bugs. I hope you walk away with a better understanding of why we need to actively dismantle our racist legacy.',
     year: 0,
     citations: [],
 
@@ -23,16 +23,16 @@ export const DEFAULT_DETAIL: Details = {
 
 export const MORE_DETAIL: Details = {
     title: 'There are more events that don\'t fit the screen',
-	body: 'Believe it or not, the injustices of systemic racism are too numerous to fit your screen. Please resize your browser and refresh or use a larger device.',
+	body: 'Believe it or not, the roots of systemic racism are too numerous to fit your screen. Please resize your browser and refresh or use a larger device.',
 	year: 0,
 	citations: [],
 };
 
 export const DETAILS: Details[] = [
     {
-	title: 'Slavery in America',
+	title: '20 and odd slaves land in Virginia',
 	year: 1619,
-	body: 'As a privateer with a letter of marque, The English warship White Lion legally stole "20 and odd" slaves from a Portuguese ship headed to Veracruz. Most of the enslaved are believed to have been captured during an ongoing war between Portugal and the kingdom of Ndongo. These people were then traded away by the captain for food. This event marks the custom of slavery in Virginia, of which laws can later spring from.',
+	body: 'As a privateer with a letter of marque, The English warship White Lion legally stole "20 and odd" slaves from a Portuguese ship headed to Veracruz. Most of the enslaved are believed to have been captured during an ongoing war between Portugal and the kingdom of Ndongo. These people were then traded away to the colony by the  captain for food. This event marks the custom of slavery in Virginia, of which laws can later spring from. Because slavery has not been codified into law yet, these prisoners of war were technically indentured servants. Notably, this was a time of food scarcity, as Jamestown was built in a marsh of infertile land and malaria-harboring mosquitos, so one can be certain that these "indentured servants" were put to good use.',
 	citations: [
 	    {
 		source: 'National Park Service',
@@ -44,7 +44,23 @@ export const DETAILS: Details[] = [
 		name: 'Africans in Virginia mark turning point for slavery in America',
 		link: 'https://time.com/5653369/august-1619-jamestown-history',
 	    },
+	    {
+		source: 'Livingston Public School',
+		name: 'The First Successful English Colony',
+		link: 'https://www.livingston.org/cms/lib9/NJ01000562/Centricity/Domain/1461/Jamestown%20COMPLETE%20Notes.pdf',
+	    },
 	],
     },
-
+    {
+	title: 'The first racist gun law',
+	year: 1639,
+	body: 'This year saw the instutition of two racist weapons statutes in Virginia: the first "prohibits negroes, slave and free, from carrying weapons including clubs," while the second states that "all such free Mulattoes, Negroes and Indians...shall appear without arms". It\'s important to note ',
+	citations: [
+	    {
+		source: 'Sedgwick County',
+		name: 'The Racist Origins of US Gun Control',
+		link: 'https://www.sedgwickcounty.org/media/29093/the-racist-origins-of-us-gun-control.pdf',
+	    },
+	],
+    },
 ];
