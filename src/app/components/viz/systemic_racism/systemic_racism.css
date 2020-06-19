@@ -26,3 +26,9 @@ h2 {
 	height: 65%;
     }
 }
+
+@media screen and (max-width: 840px) and (max-height: 640px) {
+    .viz {
+	height: 45%;
+    }
+}

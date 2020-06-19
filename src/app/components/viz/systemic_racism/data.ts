@@ -13,7 +13,7 @@ export interface Citation {
 
 export const DEFAULT_DETAIL: Details = {
     title: 'Thank you for reading.',
-    body: 'You\'ve read all of the landmark events that contribute to systemic racism in America that I know of. Please tweet at me using #systemicracismviz if I\'ve missed any events or made any typos. This is a personal labor of love, so please be understanding that I may not update the visualization right away.',
+    body: 'You\'ve read all of the landmark events that contribute to systemic racism in America that I know of. Please tweet at me using #systemicracismviz if I\'ve missed any events, made any typos, or committed any bugs. This is a labor of love, so while I may not update the visualization right away, I certainly appreciate your feedback.',
     year: 0,
     citations: [],
 
