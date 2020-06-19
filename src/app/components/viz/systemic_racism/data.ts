@@ -32,7 +32,7 @@ export const DETAILS: Details[] = [
     {
 	title: '20 and odd slaves land in Virginia',
 	year: 1619,
-	body: 'As a privateer with a letter of marque, The English warship White Lion legally stole "20 and odd" slaves from a Portuguese ship headed to Veracruz. Most of the enslaved are believed to have been captured during an ongoing war between Portugal and the kingdom of Ndongo. These people were then traded away to the colony by the  captain for food. This event marks the custom of slavery in Virginia, of which laws can later spring from. Because slavery has not been codified into law yet, these prisoners of war were technically indentured servants. Notably, this was a time of food scarcity, as Jamestown was built in a marsh of infertile land and malaria-harboring mosquitos, so one can be certain that these "indentured servants" were put to good use.',
+	body: 'As a privateer with a letter of marque, The English warship White Lion legally stole "20 and odd" slaves from a Portuguese ship headed to Veracruz. Most of the enslaved are believed to have been captured during an ongoing war between Portugal and the kingdom of Ndongo. These people were then traded away by the captain to the colony for food. This event marks the custom of slavery in Virginia, of which laws later spring from. Because slavery has not been codified into law yet, these prisoners of war were technically indentured servants. Notably, this was a time of food scarcity, as Jamestown was built in a marsh of infertile land and malaria-harboring mosquitos, so one can be certain that these "indentured servants" were put to good use.',
 	citations: [
 	    {
 		source: 'National Park Service',
@@ -52,9 +52,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'The first racist gun law',
+	title: 'The first racist gun laws',
 	year: 1639,
-	body: 'This year saw the instutition of two racist weapons statutes in Virginia: the first "prohibits negroes, slave and free, from carrying weapons including clubs," while the second states that "all such free Mulattoes, Negroes and Indians...shall appear without arms". It\'s important to note ',
+	body: 'This year saw the instutition of two racist weapons statutes in Virginia: the first "prohibits negroes, slave and free, from carrying weapons including clubs," while the second states that "all such free Mulattoes, Negroes and Indians...shall appear without arms". Altogether an unsurprising set of laws, seeing as Native Americans saw the colonists as invaders and reacted to their settlement by massacring almost 400 colonists in 1622, a third of the Jamestown population.',
 	citations: [
 	    {
 		source: 'Sedgwick County',
