@@ -22,7 +22,6 @@ html {
 
 h2 { color: #444; font-weight: lighter; }
 body {
-    margin: 2em;
     height: 100%;
     overflow: hidden;
 }

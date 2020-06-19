@@ -35,12 +35,12 @@ h3 {
 
 @media screen and (max-width: 375px) {
     .viz {
-	height: 45%;
+	height: 55%;
     }
 }
 
 @media screen and (max-width: 340px) {
     .viz {
-	height: 35%;
+	height: 45%;
     }
 }
