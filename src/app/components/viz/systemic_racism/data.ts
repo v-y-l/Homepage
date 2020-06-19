@@ -32,7 +32,7 @@ export const DETAILS: Details[] = [
     {
 	title: 'Slavery in America',
 	year: 1619,
-	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
+	body: 'As a privateer with a letter of marque, The English warship White Lion legally stole "20 and odd" slaves from a Portuguese ship headed to Veracruz. Most of the enslaved are believed to have been captured during an ongoing war between Portugal and the kingdom of Ndongo. These people were then traded away by the captain for food. This event marks the custom of slavery in Virginia, of which laws can later spring from.',
 	citations: [
 	    {
 		source: 'National Park Service',
@@ -41,9 +41,9 @@ export const DETAILS: Details[] = [
 	    },
 	    {
 		source: 'Time Magazine'
-		name: 'Africans in Virginia mark turning point for Slavery in America',
+		name: 'Africans in Virginia mark turning point for slavery in America',
 		link: 'https://time.com/5653369/august-1619-jamestown-history',
-	    }
+	    },
 	],
     },
 
