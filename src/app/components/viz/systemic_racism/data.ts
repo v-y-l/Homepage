@@ -9,6 +9,7 @@ export interface Details {
 export interface Citation {
     name: string,
     link: string,
+    source: string,
 }
 
 export const DEFAULT_DETAIL: Details = {
@@ -34,9 +35,15 @@ export const DETAILS: Details[] = [
 	body: 'The first 19 or so Africans to reach the British colonies arrived in Point Comfort, Virginia, near Jamestown, in 1619, brought by British privateers who had seized them from a captured Portuguese slave ship. Slaves were usually baptized in Africa before embarking.',
 	citations: [
 	    {
-		name: 'Africa slaves at Jamestown by National Park Service',
+		source: 'National Park Service',
+		name: 'African slaves at Jamestown',
 		link: 'https://www.nps.gov/jame/learn/historyculture/african-americans-at-jamestown.htm',
 	    },
+	    {
+		source: 'Time Magazine'
+		name: 'Africans in Virginia mark turning point for Slavery in America',
+		link: 'https://time.com/5653369/august-1619-jamestown-history',
+	    }
 	],
     },
 
