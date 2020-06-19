@@ -78,7 +78,7 @@ export const DETAILS: Details[] = [
     {
 	title: 'Slavery is now inheritable',
 	year: 1662,
-	body: 'Whereas some doubts have arisen whether children got by any Englishman upon a Negro woman should be slave or free, be it therefore enacted and declared by this present Grand Assembly, that all children born in this country shall be held bond or free only according to the condition of the mother; and that if any Christian shall commit fornication with a Negro man or woman, he or she so offending shall pay double the fines imposed by the former act.',
+	body: 'A child born to an enslaved mother inherits her slave status. Straight from the Virginia book of statutes: "Whereas some doubts have arisen whether children got by any Englishman upon a Negro woman should be slave or free, be it therefore enacted and declared by this present Grand Assembly, that all children born in this country shall be held bond or free only according to the condition of the mother; and that if any Christian shall commit fornication with a Negro man or woman, he or she so offending shall pay double the fines imposed by the former act."',
 	citations: [
 	    {
 		source: 'Swarthmore College',
