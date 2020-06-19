@@ -6,4 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./header.css']
 })
 export class Header {
+    goToTwitter() {
+	window.open('https://twitter.com/vlinvlin6');
+    }
 }

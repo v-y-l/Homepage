@@ -1,0 +1,22 @@
+.viz {
+    width: 100%;
+    height: 75%;
+}
+
+h1 {
+    color: black;
+    font-family: 'open-sans-light';
+    margin: 0;
+    padding: 18px 10px 0px 50px;
+}
+
+h1 span {
+    color: red;
+}
+
+h2 {
+    color: black;
+    font-family: 'open-sans-light';
+    margin: 0;
+    padding: 10px 10px 5px 50px;
+}

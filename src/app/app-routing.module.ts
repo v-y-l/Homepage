@@ -3,12 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { Desktop } from './pages/desktop/desktop';
 import { Folder } from './pages/folder/folder';
-import { Article } from './pages/article/article';
+import { Post } from './pages/post/post';
 
 const routes: Routes = [
     { path: '', component: Desktop },
     { path: 'folder/:id', component: Folder },
-    { path: 'article/:id', component: Article },
+    { path: 'post/:id', component: Post },
 ];
 
 @NgModule({

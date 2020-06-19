@@ -6,8 +6,9 @@
     background: transparent;
     border-radius: 8px;
     line-height: 20px;
+    color: white;
 }
 
 .tile:hover {
-    background: #fafafa;
+    background: #a7a7a773;
 }
