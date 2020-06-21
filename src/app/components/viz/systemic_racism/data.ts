@@ -7,7 +7,6 @@ export interface Details {
 }
 
 export interface Citation {
-    name: string,
     link: string,
     source: string,
 }
@@ -36,17 +35,14 @@ export const DETAILS: Details[] = [
 	citations: [
 	    {
 		source: 'National Park Service',
-		name: 'African slaves at Jamestown',
 		link: 'https://www.nps.gov/jame/learn/historyculture/african-americans-at-jamestown.htm',
 	    },
 	    {
 		source: 'Time Magazine',
-		name: 'Africans in Virginia mark turning point for slavery in America',
 		link: 'https://time.com/5653369/august-1619-jamestown-history',
 	    },
 	    {
 		source: 'Livingston Public School',
-		name: 'The First Successful English Colony',
 		link: 'https://www.livingston.org/cms/lib9/NJ01000562/Centricity/Domain/1461/Jamestown%20COMPLETE%20Notes.pdf',
 	    },
 	],
@@ -58,7 +54,6 @@ export const DETAILS: Details[] = [
 	citations: [
 	    {
 		source: 'Sedgwick County',
-		name: 'The Racist Origins of US Gun Control',
 		link: 'https://www.sedgwickcounty.org/media/29093/the-racist-origins-of-us-gun-control.pdf',
 	    },
 	],
@@ -70,7 +65,6 @@ export const DETAILS: Details[] = [
 	citations: [
 	    {
 		source: 'Encyclopedia Virginia in partnership with the Library of Virginia',
-		name: 'Runaway Slaves and Servants in Colonial Virginia',
 		link: 'https://www.encyclopediavirginia.org/Runaway_Slaves_and_Servants_in_Colonial_Virginia',
 	    },
 	],
@@ -82,7 +76,6 @@ export const DETAILS: Details[] = [
 	citations: [
 	    {
 		source: 'Swarthmore College',
-		name: 'Virginia Slave Laws',
 		link: 'https://www.swarthmore.edu/SocSci/bdorsey1/41docs/24-sla.html',
 	    },
 	],
