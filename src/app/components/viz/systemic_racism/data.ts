@@ -79,5 +79,16 @@ export const DETAILS: Details[] = [
 		link: 'https://www.swarthmore.edu/SocSci/bdorsey1/41docs/24-sla.html',
 	    },
 	],
-    }
+    },
+    {
+	title: 'The largest slave auction in American history',
+	year: 1859,
+	body: 'At a horse racetrack outside Savannah, Georgia, more than 400 enslaved people were auctioned off. They came from Major Pierce Butler’s plantations and had spent all of their lives enslaved together. Two and three generations deep, the men, women and children were separated and sold all across the continent. According to one account, "the man and wife might be sold to the pine woods of North Carolina, their brothers and sisters be scattered through the cotton fields of Alabama and the rice swamps of Louisiana, while the parents might be left on the old plantation to wear out their weary lives in heavy grief, and lay their heads in far-off graves, over which their children might never weep."',
+	citations: [
+	    {
+		source: 'Washington Post',
+		link: 'https://www.washingtonpost.com/education/2019/08/28/historians-slavery-myths/?arc404=true',
+	    },
+	],
+    },
 ];
