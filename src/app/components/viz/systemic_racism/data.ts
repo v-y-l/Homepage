@@ -22,7 +22,7 @@ export const DEFAULT_DETAIL: Details = {
 
 export const MORE_DETAIL: Details = {
     title: 'There are more events that don\'t fit the screen',
-	body: 'Believe it or not, the roots of systemic racism are too numerous to fit your screen. Please resize your browser and refresh or use a larger device.',
+	body: 'Believe it or not, the roots of systemic racism are too numerous to fit your screen. Please resize your browser and refresh, or use a larger device.',
 	year: 0,
 	citations: [],
 };
@@ -31,7 +31,7 @@ export const DETAILS: Details[] = [
     {
 	title: '20 and odd slaves land in Virginia',
 	year: 1619,
-	body: 'As a privateer with a letter of marque, The English warship White Lion legally stole "20 and odd" slaves from a Portuguese ship headed to Veracruz. Most of the enslaved are believed to have been captured during an ongoing war between Portugal and the kingdom of Ndongo. These people were then traded away by the captain to the colony for food. This event marks the custom of slavery in Virginia, of which laws later spring from. Because slavery has not been codified into law yet, these prisoners of war were technically indentured servants. Notably, this was a time of food scarcity, as Jamestown was built in a marsh of infertile land and malaria-harboring mosquitos, so one can be certain that these "indentured servants" were put to good use.',
+	body: 'As a privateer with a letter of marque, The English warship White Lion legally stole "20 and odd" slaves from a Portuguese ship headed to Veracruz. Most of the enslaved are believed to have been captured during an ongoing war between Portugal and the kingdom of Ndongo. These people were then traded away by the captain to the colony for food. This marks the custom of slavery in Virginia, of which laws later sprung. Because slavery has yet been codified into law, these prisoners of war were technically indentured servants. Notably, this was a time of food scarcity, as Jamestown was built in a marsh of infertile land and malaria-harboring mosquitos, so with certainty, these "indentured servants" were put to good use.',
 	citations: [
 	    {
 		source: 'National Park Service',
@@ -50,7 +50,7 @@ export const DETAILS: Details[] = [
     {
 	title: 'The first racist gun law',
 	year: 1639,
-	body: 'This year saw the instutition of two racist weapons statutes in Virginia: the first "prohibits negroes, slave and free, from carrying weapons including clubs," while the second states that "all such free Mulattoes, Negroes and Indians...shall appear without arms". Altogether an unsurprising set of laws, seeing as Native Americans saw the colonists as invaders and reacted to their settlement by massacring almost 400 colonists in 1622, a third of the Jamestown population.',
+	body: 'This year saw the instutition of two racist weapons statutes in Virginia: the first "prohibits negroes, slave and free, from carrying weapons including clubs," while the second states that "all such free Mulattoes, Negroes and Indians...shall appear without arms". Altogether an unsurprising set of laws, seeing as Native Americans saw the colonists as invaders and reacted to their settlement by massacring almost 400 colonists in 1622 (a third of the Jamestown population).',
 	citations: [
 	    {
 		source: 'Sedgwick County',
@@ -61,7 +61,7 @@ export const DETAILS: Details[] = [
     {
 	title: 'The first slave in the eyes of the law',
 	year: 1640,
-	body: 'White indentured servants and black slaves shared a lot in common as a people who suffered under abusive masters, wanted to take a break from back-breaking farm labor, and missed their families. On July 1640, three servants escaped to Maryland and were captured there: Victor, "a Dutchman," and James Gregory, "a Scotchman," were sentenced to be whipped, with four years were added to their indentures. The third servant, "a negro named John Punch," was made a slave for life by the Virginia courts.',
+	body: 'White indentured servants and black slaves share a lot in common as a people who suffer under abusive masters, want to take breaks from back-breaking farm labor, and miss their families. On July 1640, three servants escaped to Maryland and were captured there: Victor, "a Dutchman," and James Gregory, "a Scotchman," were sentenced to be whipped, with four years added to their indentures. The third servant, "a negro named John Punch," was made a slave for life by the Virginia courts.',
 	citations: [
 	    {
 		source: 'Encyclopedia Virginia in partnership with the Library of Virginia',
