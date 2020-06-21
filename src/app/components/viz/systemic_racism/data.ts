@@ -91,7 +91,18 @@ export const DETAILS: Details[] = [
 	    },
 	],
     },
-        {
+    {
+	title: 'America has her first blockbuster film',
+	year: 1915,
+	body: '',
+	citations: [
+	    {
+		source: 'NPR',
+		link: 'https://www.npr.org/sections/codeswitch/2015/02/08/383279630/100-years-later-whats-the-legacy-of-birth-of-a-nation',
+	    }
+	],
+    },
+    {
 	title: 'Black Wall Street gets burned down and slaughtered',
 	year: 1921,
 	body: 'By the 1920s, the African American community in Tulsa, Oklahoma emerged as a renownd entrepreneurial hub, with its Greenwood district known as "Black Wall Street". Black educator, entrepreneur, and landowner, O.W. Gurley owned rental properties, a rooming house, a grocery store, and a hotel. J.B. Stradford, a lawyer, owned another of the area’s several hotels. Simon Berry ran a jitney, a bus line, a charter plane service, and a hotel. The Williams Family owned a theater, a garage, a confectionery, and a rooming house. Dr. A.C. Jackson, called the “most able negro surgeon in America” by the Mayo brothers of the Mayo Clinic, broke the color line, attending to black and white patients alike. This was just a sliver of the talent in this burgeoning community, abruptly ended by the thousands of jealous armed white men, some carrying machine guns and deputized by local law enforcement, that invaded the Greenwood district. They gunned people down (including Dr. A.C. Jackson of the Mayo Clinic, who had his hands raised in surrender), set fires throughout the district, and organized planes to drop bombs on the Greenwood district. In less than 24 hours, a white mob reduced a vibrant, 35-block area to rubble and dead bodies. The vast majority of Tulsa\'s African American population became homeless by the end of the day and thousands were forced to spend that winter living in tents.',
