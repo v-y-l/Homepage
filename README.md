@@ -1,2 +1,2 @@
-# Blog
-Welcome to my personal homepage. The articles and post represent my opinion and mine only, and I reserve the right to refine or change my opinions. :)
+# Homepage
+This code powers the frontend of my personal webpage. Accompanying thoughts and opinions are my own :)
