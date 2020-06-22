@@ -92,21 +92,6 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'America has her first blockbuster film',
-	year: 1915,
-	body: 'Birth of the Nation was a cinematic masterpiece. It was the first movie screened at the White House, the first 12-reel film, and the first to have its own orchestral musical score. It pioneered close-ups, fade-outs, and a carefully staged battle sequence with hundreds of extras made to look like thousands. It was also a hate film that glorified the KKK, about black people exerting undue influence on the Southern whites during Reconstruction. First, a black captain (Walter Long in blackface) from the Union army relentlessly pursuing a Confederate Colonel\'s little sister until she commits suicide, then a black member from the South Carolina legislature (this character of Silas Lynch has no basis in fact, since there were no black or mulatto men that served as the lieutenant governor of South Carolina during Reconstruction) threatens the governor\'s daughter to marry him, until clan members come in to restore the peace. In short, Hollywood\'s first smashing box office success was also white supremacist propaganda.',
-	citations: [
-	    {
-		source: 'NPR',
-		link: 'https://www.npr.org/sections/codeswitch/2015/02/08/383279630/100-years-later-whats-the-legacy-of-birth-of-a-nation',
-	    },
-	    {
-		source: 'Facing History and Ourselves Non-Profit',
-		link: 'https://www.facinghistory.org/reconstruction-era/influence-birth-nation',
-	    },
-	],
-    },
-    {
 	title: 'Separate but equal',
 	year: 1877,
 	body: '',
@@ -120,6 +105,22 @@ export const DETAILS: Details[] = [
 		link: 'https://www.crf-usa.org/black-history-month/a-brief-history-of-jim-crow',
 	    },
 	]
+    },
+
+    {
+	title: 'America has her first blockbuster film',
+	year: 1915,
+	body: 'Birth of the Nation was a cinematic masterpiece. It was the first movie screened at the White House, the first 12-reel film, and the first to have its own orchestral musical score. It pioneered close-ups, fade-outs, and a carefully staged battle sequence with hundreds of extras made to look like thousands. It was also a hate film that glorified the KKK, about black people exerting undue influence on the Southern whites during Reconstruction. First, a black captain (Walter Long in blackface) from the Union army relentlessly pursuing a Confederate Colonel\'s little sister until she commits suicide, then a black member from the South Carolina legislature (this character of Silas Lynch has no basis in fact, since there were no black or mulatto men that served as the lieutenant governor of South Carolina during Reconstruction) threatens the governor\'s daughter to marry him, until clan members come in to restore the peace. In short, Hollywood\'s first smashing box office success was also white supremacist propaganda.',
+	citations: [
+	    {
+		source: 'NPR',
+		link: 'https://www.npr.org/sections/codeswitch/2015/02/08/383279630/100-years-later-whats-the-legacy-of-birth-of-a-nation',
+	    },
+	    {
+		source: 'Facing History and Ourselves Non-Profit',
+		link: 'https://www.facinghistory.org/reconstruction-era/influence-birth-nation',
+	    },
+	],
     },
     {
 	title: 'Black Wall Street gets burned down and slaughtered',
