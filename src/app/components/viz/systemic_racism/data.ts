@@ -94,7 +94,7 @@ export const DETAILS: Details[] = [
     {
 	title: 'America has her first blockbuster film',
 	year: 1915,
-	body: 'The Birth of the Nation was a cinematic masterpiece: it was the first movie to be screened at the White House, the first 12-reel film ever made, and the first to have its own orchestral musical score. It pioneered close-ups, fade-outs, and a carefully staged battle sequence with hundreds of extras made to look like thousands. It was also a hate film that glorified the KKK, portrayed Reconstruction as catastrophic, and represented Black Americans as uncouth, intellectually inferior, and predators of white women.',
+	body: 'The Birth of the Nation was a cinematic masterpiece: it was the first movie to be screened at the White House, the first 12-reel film, and the first to have its own orchestral musical score. It pioneered close-ups, fade-outs, and a carefully staged battle sequence with hundreds of extras made to look like thousands. It was also a hate film that glorified the KKK. The movie is about a black captain from the Union army relentlessly pursuing a Confederate Colonel\'s little sister until she commits suicide, then a black member from the South Carolina legislature coerces the governor\'s daughter with weapons to marry him, until clan members come in to restore the peace. It popularized the cross burning and black face, and was replete with negative black stereotypes. But it also did Hollywood.',
 	citations: [
 	    {
 		source: 'NPR',
