@@ -94,7 +94,7 @@ export const DETAILS: Details[] = [
     {
 	title: 'The largest slave auction in American history',
 	year: 1859,
-	body: 'At a horse racetrack outside Savannah, Georgia, more than 400 enslaved people were auctioned off. They came from Major Pierce Butler’s plantations and had spent all of their lives enslaved together. Two and three generations deep, the men, women and children were separated and sold all across the continent. According to one account, "the man and wife might be sold to the pine woods of North Carolina, their brothers and sisters be scattered through the cotton fields of Alabama and the rice swamps of Louisiana, while the parents might be left on the old plantation to wear out their weary lives in heavy grief, and lay their heads in far-off graves, over which their children might never weep."',
+	body: 'At a horse racetrack outside Savannah, Georgia, more than 400 enslaved people were auctioned off. They came from Major Pierce Butler\'s plantations and had spent all of their lives enslaved together. Two and three generations deep, the men, women and children were separated and sold all across the continent. According to one account, "the man and wife might be sold to the pine woods of North Carolina, their brothers and sisters be scattered through the cotton fields of Alabama and the rice swamps of Louisiana, while the parents might be left on the old plantation to wear out their weary lives in heavy grief, and lay their heads in far-off graves, over which their children might never weep."',
 	citations: [
 	    {
 		source: 'Washington Post',
@@ -114,6 +114,17 @@ export const DETAILS: Details[] = [
 	    {
 		source: 'National Park Service',
 		link: 'https://www.nps.gov/liho/learn/historyculture/housedivided.htm',
+	    }
+	],
+    },
+    {
+	title: 'Don\'t ride together',
+	year: 1891,
+	body: 'Tennesee state law: "All railroads carrying passengers in the state (other than street railroads) shall provide equal but separate accommodations for the white and colored races, by providing two or more passenger cars for each passenger train, or by dividing the cars by a partition, so as to secure separate accommodations."',
+	citations: [
+	    {
+		source: 'Smithsonian National Museum of American History',
+		link: 'https://americanhistory.si.edu/brown/history/1-segregated/jim-crow.html',
 	    }
 	],
     },
@@ -144,7 +155,7 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Black Wall Street gets burned down and slaughtered',
+	title: 'Black Wall Street gets burned down',
 	year: 1921,
 	body: 'By the 1920s, the African American community in Tulsa, Oklahoma emerged as a renowned entrepreneurial hub, with its Greenwood district known as "Black Wall Street". Black educator, entrepreneur, and landowner, O.W. Gurley owned rental properties, a rooming house, a grocery store, and a hotel. J.B. Stradford, a lawyer, owned another of the area’s several hotels. Simon Berry ran a jitney, a bus line, a charter plane service, and a hotel. The Williams Family owned a theater, a garage, a confectionery, and a rooming house. Dr. A.C. Jackson, called the “most able negro surgeon in America” by the Mayo brothers of the Mayo Clinic, broke the color line, attending to black and white patients alike. This was just a sliver of the talent in this burgeoning community, abruptly ended by the thousands of jealous armed white men, some carrying machine guns and deputized by local law enforcement, that invaded the Greenwood district. They gunned people down (including Dr. A.C. Jackson of the Mayo Clinic, who had his hands raised in surrender), set fires throughout the district, and organized planes to drop bombs on the Greenwood district. In less than 24 hours, a white mob reduced a vibrant, 35-block area to rubble and dead bodies. The majority of Tulsa\'s African American population became homeless by the end of the day and thousands were forced to spend that winter living in tents.',
 	citations: [
@@ -156,17 +167,6 @@ export const DETAILS: Details[] = [
 		source: 'The Guardian',
 		link: 'https://www.theguardian.com/commentisfree/2020/jun/19/tulsa-1921-massacre-trump-violence-legacy',
 	    },
-	],
-    },
-    {
-	title: 'Don\'t ride together',
-	year: 1891,
-	body: 'Tennesee state law: "All railroads carrying passengers in the state (other than street railroads) shall provide equal but separate accommodations for the white and colored races, by providing two or more passenger cars for each passenger train, or by dividing the cars by a partition, so as to secure separate accommodations."',
-	citations: [
-	    {
-		source: 'Smithsonian National Museum of American History',
-		link: 'https://americanhistory.si.edu/brown/history/1-segregated/jim-crow.html',
-	    }
 	],
     },
     {
@@ -192,9 +192,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'The leader of civil rights movements gets assassinated',
+	title: 'MLK gets assassinated',
 	year: 1963,
-	body: 'King, our apostle of non-violence, masterful orator, and defender of the poor, the needy, and the American dream, said during a speech supporting a sanitation workers\'s strike in Tennessee: "I’ve seen the promised land. I may not get there with you. But I want you to know tonight, that we, as a people, will get to the promised land. And I’m happy tonight. I’m not worried about anything. I’m not fearing any man. Mine eyes have seen the glory of the coming of the Lord." The following day, he was assassinated by racist and small-time criminal James Earl Ray.',
+	body: 'MLK, the apostle of non-violence, masterful orator, and defender of the poor, the needy, and the American dream, said during a speech supporting a sanitation workers\'s strike in Tennessee: "I’ve seen the promised land. I may not get there with you. But I want you to know tonight, that we, as a people, will get to the promised land. And I’m happy tonight. I’m not worried about anything. I’m not fearing any man. Mine eyes have seen the glory of the coming of the Lord." The following day, he was assassinated by racist and small-time criminal James Earl Ray.',
 	citations: [
 	    {
 		source: 'History Channel',
@@ -207,9 +207,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Four Los Angeles policemen acquitted of the savage beating of Rodney King',
+	title: 'LA policemen acquitted of savage beating',
 	year: 1992,
-	body: 'A year earlier, King led police on a high-speed chase through Los Angeles and was charged with driving under the influence. When the LAPD finally stopped King, they gave him a savage beating with batons for 15 minutes, until King\'s skull was fractured, bones  broken, teeth shattered, and brain damaged. All this was captured on camera. The four officers were charged with excessive use of force, but acquitted a year later by a jury consisting of 12 residents from the distant white suburb of Vetura County. LA residents rioted by setting fires, looting, and destroying liquor stores, grocery stores, retail shops and fast food restaurants. By the time the riots ended, 63 people had been killed, 2,383 people had been injured, more than 12,000 had been arrested, and estimates of property damage were over $1 billion, mostly in Koreatown.',
+	body: 'California native Rodney King led police on a high-speed chase through Los Angeles and was charged with driving under the influence. When the LAPD finally stopped King, they gave him a savage beating for 15 minutes with batons, until King\'s skull was fractured, bones  broken, teeth shattered, and brain damaged. All this was captured on camera. The four officers were charged with excessive use of force, but acquitted a year later by a jury consisting of 12 residents from the distant white suburb of Vetura County. LA residents rioted by setting fires, looting, and destroying liquor stores, grocery stores, retail shops and fast food restaurants. By the time the riots ended, 63 people had been killed, 2,383 people had been injured, more than 12,000 had been arrested, and estimates of property damage were over $1 billion, mostly in Koreatown.',
 	citations: [
 	    {
 		source: 'NPR',

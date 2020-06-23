@@ -1,7 +1,3 @@
-div.mat-dialog-content {
-    max-height: 250px;
-}
-
 a {
     outline: none;
 }
@@ -10,7 +6,13 @@ h1 {
     margin-bottom: 0px;
 }
 
+h1.mat-dialog-title {
+    max-height: 65px;
+    overflow: scroll;
+}
+
 div.mat-dialog-content {
+    max-height: 200px;
     margin: 10px 0px;
     padding: 0px;
 }
