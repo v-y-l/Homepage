@@ -105,11 +105,11 @@ export const DETAILS: Details[] = [
     {
 	title: 'Seven southern slave-holding states secede',
 	year: 1861,
-	body: 'The America was so divided over slavery, we went to war over it. President Lincoln describes to the Republican state convention: "A house divided against itself cannot stand. I believe this government cannot endure, permanently half slave and half free. I do not expect the Union to be dissolved - I do not expect the house to fall - but I do expect it will cease to be divided. It will become all one thing, or all the other. Either the opponents of slavery, will arrest the further spread of it, and place it where the public mind shall rest in the belief that it is in course of ultimate extinction; or its advocates will push it forward till it shall become alike lawful in all the States, old as well as new-North as well as South. Have we no tendency to the latter condition?"',
+	body: 'America was so divided over slavery that we went to war with ourselves over it. The argument was that a small group of rich slave owners had seized political control of their own states and were trying to take over the national government in an illegitimate fashion to expand and protect slavery has become a festering sore in the American consciousness. President Lincoln describes to the Republican state convention: "A house divided against itself cannot stand. I believe this government cannot endure, permanently half slave and half free. I do not expect the Union to be dissolved - I do not expect the house to fall - but I do expect it will cease to be divided. It will become all one thing, or all the other. Either the opponents of slavery, will arrest the further spread of it, and place it where the public mind shall rest in the belief that it is in course of ultimate extinction; or its advocates will push it forward till it shall become alike lawful in all the States, old as well as new-North as well as South. Have we no tendency to the latter condition?" Shortly after Abraham Lincoln had been inaugurated as the president, war broke out between the Union and Confederacy.',
 	citations: [
 	    {
-		source: 'PBS',
-		link: 'https://www.pbs.org/opb/historydetectives/feature/causes-of-the-civil-war',
+		source: 'American History USA',
+		link: 'https://www.americanhistoryusa.com/topic/slave-power/'
 	    },
 	    {
 		source: 'National Park Service',
