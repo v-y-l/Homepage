@@ -31,7 +31,7 @@ export const DETAILS: Details[] = [
     {
 	title: '20 and odd slaves land in Virginia',
 	year: 1619,
-	body: 'As a privateer with a letter of marque, The English warship White Lion legally stole "20 and odd" slaves from a Portuguese ship headed to Veracruz. Most of the enslaved are believed to have been captured during an ongoing war between Portugal and the kingdom of Ndongo. These people were then traded away by the captain to the colony for food. This marks the custom of slavery in Virginia, of which laws later sprung. Because slavery has yet been codified into law, these prisoners of war were technically indentured servants. Notably, this was a time of food scarcity, as Jamestown was built in a marsh of infertile land and malaria-harboring mosquitos, so with certainty, these "indentured servants" were put to good use.',
+	body: 'As a privateer with a letter of marque, The English warship White Lion legally stole "20 and odd" slaves from a Portuguese ship headed to Veracruz. Most of the enslaved are believed to have been captured during an ongoing war between Portugal and the kingdom of Ndongo. These people were then traded away by the captain to the colony for food. This signals the custom of slavery in Virginia, from which laws later sprung from. Because slavery has yet been codified into law, these prisoners of war were technically indentured servants. Notably, this was a time of food scarcity, as Jamestown was built in a marsh of infertile land and malaria-harboring mosquitos, so with certainty, these "indentured servants" were put to good use.',
 	citations: [
 	    {
 		source: 'National Park Service',
@@ -91,6 +91,17 @@ export const DETAILS: Details[] = [
 	    },
 	],
     },
+        {
+	title: 'Seven Southern slave-holding states secede',
+	year: 1861,
+	body: 'At a horse racetrack outside Savannah, Georgia, more than 400 enslaved people were auctioned off. They came from Major Pierce Butler’s plantations and had spent all of their lives enslaved together. Two and three generations deep, the men, women and children were separated and sold all across the continent. According to one account, "the man and wife might be sold to the pine woods of North Carolina, their brothers and sisters be scattered through the cotton fields of Alabama and the rice swamps of Louisiana, while the parents might be left on the old plantation to wear out their weary lives in heavy grief, and lay their heads in far-off graves, over which their children might never weep."',
+	citations: [
+	    {
+		source: 'Washington Post',
+		link: 'https://www.washingtonpost.com/education/2019/08/28/historians-slavery-myths/?arc404=true',
+	    },
+	],
+    },
     {
 	title: 'Separate but equal',
 	year: 1877,
@@ -106,11 +117,10 @@ export const DETAILS: Details[] = [
 	    },
 	]
     },
-
     {
 	title: 'America has her first blockbuster film',
 	year: 1915,
-	body: 'Birth of the Nation was a cinematic masterpiece. It was the first movie screened at the White House, the first 12-reel film, and the first to have its own orchestral musical score. It pioneered close-ups, fade-outs, and a carefully staged battle sequence with hundreds of extras made to look like thousands. It was also a hate film that glorified the KKK, about black people exerting undue influence on the Southern whites during Reconstruction. First, a black captain (Walter Long in blackface) from the Union army relentlessly pursuing a Confederate Colonel\'s little sister until she commits suicide, then a black member from the South Carolina legislature (this character of Silas Lynch has no basis in fact, since there were no black or mulatto men that served as the lieutenant governor of South Carolina during Reconstruction) threatens the governor\'s daughter to marry him, until clan members come in to restore the peace. In short, Hollywood\'s first smashing box office success was also white supremacist propaganda.',
+	body: 'Birth of the Nation was a cinematic masterpiece. It was the first movie screened at the White House, the first 12-reel film, and the first to have its own orchestral musical score. It pioneered close-ups, fade-outs, and a carefully staged battle sequence with hundreds of extras made to look like thousands. It was also a hate film that glorified the KKK, about black people exerting undue influence on the Southern whites during Reconstruction. First, a black captain (Walter Long in blackface) from the Union army relentlessly pursuing a Confederate Colonel\'s little sister until she commits suicide, then a black member from the South Carolina legislature (this character of Silas Lynch has no basis in fact, since there were no black or mulatto men that served as the lieutenant governor of South Carolina during Reconstruction) threatens the governor\'s daughter to marry him, until clan members come in to restore the peace. In short, Hollywood\'s first smash box office success was white supremacist propaganda.',
 	citations: [
 	    {
 		source: 'NPR',
