@@ -91,15 +91,30 @@ export const DETAILS: Details[] = [
 	    },
 	],
     },
-        {
+    {
+	title: 'The U.S. constitution does not mean to extend American citizenship to black people',
+	year: 1856,
+	body: 'Dred Scott v. Sandford',
+	citations: [
+	    {
+		source: '',
+		link: '',
+	    },
+	],
+    },
+    {
 	title: 'Seven southern slave-holding states secede',
 	year: 1861,
-	body: '',
+	body: 'The America was so divided over slavery, we went to war over it. President Lincoln describes to the Republican state convention: "A house divided against itself cannot stand. I believe this government cannot endure, permanently half slave and half free. I do not expect the Union to be dissolved - I do not expect the house to fall - but I do expect it will cease to be divided. It will become all one thing, or all the other. Either the opponents of slavery, will arrest the further spread of it, and place it where the public mind shall rest in the belief that it is in course of ultimate extinction; or its advocates will push it forward till it shall become alike lawful in all the States, old as well as new-North as well as South. Have we no tendency to the latter condition?"',
 	citations: [
 	    {
 		source: 'PBS',
 		link: 'https://www.pbs.org/opb/historydetectives/feature/causes-of-the-civil-war',
 	    },
+	    {
+		source: 'National Park Service',
+		link: 'https://www.nps.gov/liho/learn/historyculture/housedivided.htm',
+	    }
 	],
     },
     {
