@@ -209,7 +209,7 @@ export const DETAILS: Details[] = [
     {
 	title: 'Four Los Angeles policemen acquitted of the savage beating of Rodney King',
 	year: 1992,
-	body: 'A year earlier, King led police on a high-speed chase through Los Angeles and was charged with driving under the influence. When the LAPD finally stopped him, they gave King a savage beating with batons for 15 minutes, until his skull was fractured, bones were broken, and teeth were shattered, brain was damaged. All this was captured on camera. The four officers were charged with excessive use of force, but a year later, a jury consisting of 12 residents from the distant suburbs found the four officers innocent. LA Residents responded by setting fires, looting, and destroying liquor stores, grocery stores, retail shops and fast food restaurants.',
+	body: 'A year earlier, King led police on a high-speed chase through Los Angeles and was charged with driving under the influence. When the LAPD finally stopped King, they gave him a savage beating with batons for 15 minutes, until King\'s skull was fractured, bones  broken, teeth shattered, and brain damaged. All this was captured on camera. The four officers were charged with excessive use of force, but acquitted a year later by a jury consisting of 12 residents from the distant white suburb of Vetura County. LA residents rioted by setting fires, looting, and destroying liquor stores, grocery stores, retail shops and fast food restaurants. By the time the riots ended, 63 people had been killed, 2,383 people had been injured, more than 12,000 had been arrested, and estimates of property damage were over $1 billion, mostly in Koreatown.',
 	citations: [
 	    {
 		source: 'NPR',
