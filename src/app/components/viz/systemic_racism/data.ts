@@ -119,16 +119,12 @@ export const DETAILS: Details[] = [
     },
     {
 	title: 'Separate but equal',
-	year: 1877,
-	body: '',
+	year: 1896,
+	body: '"We consider the underlying fallacy of the plaintiff’s argument to consist in the assumption that the enforced separation of the two races stamps the colored race with a badge of inferiority. If this be so, it is not by reason of anything found in the act, but solely because the colored race chooses to put that construction upon it… The argument also assumes that social prejudice may be overcome by legislation, and that equal rights cannot be secured except by an enforced commingling of the two races… If the civil and political rights of both races be equal, one cannot be inferior to the other civilly or politically. If one race be inferior to the other socially, the Constitution of the United States cannot put them upon the same plane."',
 	citations: [
 	    {
-		source: 'University of Southern California',
-		link: 'https://onlinellm.usc.edu/a-brief-history-of-jim-crow-laws',
-	    },
-	    {
-		source: 'Constitutional Rights Foundation',
-		link: 'https://www.crf-usa.org/black-history-month/a-brief-history-of-jim-crow',
+		source: 'U.S. Government Documents',
+		link: 'University of Southern California',
 	    },
 	]
     },
