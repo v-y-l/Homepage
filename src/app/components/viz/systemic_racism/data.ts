@@ -194,7 +194,7 @@ export const DETAILS: Details[] = [
     {
 	title: 'The leader of civil rights movements gets assassinated',
 	year: 1963,
-	body: '',
+	body: 'King, our apostle of non-violence, master orator, and defender of the poor and needy, said during a speech supporting a sanitation workers\'s strike in Tennessee: "I’ve seen the promised land. I may not get there with you. But I want you to know tonight, that we, as a people, will get to the promised land. And I’m happy tonight. I’m not worried about anything. I’m not fearing any man. Mine eyes have seen the glory of the coming of the Lord." The following day, he was assassinated by racist and small-time criminal James Earl Ray.',
 	citations: [
 	    {
 		source: 'History Channel',
