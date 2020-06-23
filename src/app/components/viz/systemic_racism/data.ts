@@ -118,6 +118,17 @@ export const DETAILS: Details[] = [
 	],
     },
     {
+	title: 'Don\'t ride together',
+	year: 1891,
+	body: 'Tennesee state law: "All railroads carrying passengers in the state (other than street railroads) shall provide equal but separate accommodations for the white and colored races, by providing two or more passenger cars for each passenger train, or by dividing the cars by a partition, so as to secure separate accommodations."',
+	citations: [
+	    {
+		source: 'Smithsonian National Museum of American History',
+		link: 'https://americanhistory.si.edu/brown/history/1-segregated/jim-crow.html',
+	    }
+	],
+    },
+    {
 	title: 'Separate but equal',
 	year: 1896,
 	body: 'Homer Plessy, a mulatto (7/8 white), seated himself in a white compartment, was challenged by the conductor, and got arrested for violating the state law. The supreme court under Justice Henry Brown confirms segregation into federal law: "We consider the underlying fallacy of the plaintiff’s argument to consist in the assumption that the enforced separation of the two races stamps the colored race with a badge of inferiority. If this be so, it is not by reason of anything found in the act, but solely because the colored race chooses to put that construction upon it... The argument also assumes that social prejudice may be overcome by legislation, and that equal rights cannot be secured except by an enforced commingling of the two races... If the civil and political rights of both races be equal, one cannot be inferior to the other civilly or politically. If one race be inferior to the other socially, the Constitution of the United States cannot put them upon the same plane."',
@@ -144,7 +155,7 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'Black Wall Street gets burned down and slaughtered',
+	title: 'Black Wall Street gets burned down',
 	year: 1921,
 	body: 'By the 1920s, the African American community in Tulsa, Oklahoma emerged as a renowned entrepreneurial hub, with its Greenwood district known as "Black Wall Street". Black educator, entrepreneur, and landowner, O.W. Gurley owned rental properties, a rooming house, a grocery store, and a hotel. J.B. Stradford, a lawyer, owned another of the area’s several hotels. Simon Berry ran a jitney, a bus line, a charter plane service, and a hotel. The Williams Family owned a theater, a garage, a confectionery, and a rooming house. Dr. A.C. Jackson, called the “most able negro surgeon in America” by the Mayo brothers of the Mayo Clinic, broke the color line, attending to black and white patients alike. This was just a sliver of the talent in this burgeoning community, abruptly ended by the thousands of jealous armed white men, some carrying machine guns and deputized by local law enforcement, that invaded the Greenwood district. They gunned people down (including Dr. A.C. Jackson of the Mayo Clinic, who had his hands raised in surrender), set fires throughout the district, and organized planes to drop bombs on the Greenwood district. In less than 24 hours, a white mob reduced a vibrant, 35-block area to rubble and dead bodies. The majority of Tulsa\'s African American population became homeless by the end of the day and thousands were forced to spend that winter living in tents.',
 	citations: [
@@ -156,17 +167,6 @@ export const DETAILS: Details[] = [
 		source: 'The Guardian',
 		link: 'https://www.theguardian.com/commentisfree/2020/jun/19/tulsa-1921-massacre-trump-violence-legacy',
 	    },
-	],
-    },
-    {
-	title: 'Don\'t ride together',
-	year: 1891,
-	body: 'Tennesee state law: "All railroads carrying passengers in the state (other than street railroads) shall provide equal but separate accommodations for the white and colored races, by providing two or more passenger cars for each passenger train, or by dividing the cars by a partition, so as to secure separate accommodations."',
-	citations: [
-	    {
-		source: 'Smithsonian National Museum of American History',
-		link: 'https://americanhistory.si.edu/brown/history/1-segregated/jim-crow.html',
-	    }
 	],
     },
     {
