@@ -81,6 +81,17 @@ export const DETAILS: Details[] = [
 	],
     },
     {
+	title: 'The U.S. constitution does not apply to black people',
+	year: 1857,
+	body: 'The chief justice at this time, Roger Taney, was a former slave owner, as were four other justices on the Court. Dred Scott, an enslaved black man whose owners had taken him from slave-holding Missouri to the free territory (present day Minnesota) designated by the Missouri Compromise of 1820, sued his owner Sandford once he was in free territory. After eleven years, his case reached the Supreme Court, who ruled that as a black man, Scott was not a citizen of the United States and could not bring suit.',
+	citations: [
+	    {
+		source: 'U.S. History',
+		link: 'https://www.ushistory.org/us/32a.asp',
+	    },
+	],
+    },
+    {
 	title: 'The largest slave auction in American history',
 	year: 1859,
 	body: 'At a horse racetrack outside Savannah, Georgia, more than 400 enslaved people were auctioned off. They came from Major Pierce Butler’s plantations and had spent all of their lives enslaved together. Two and three generations deep, the men, women and children were separated and sold all across the continent. According to one account, "the man and wife might be sold to the pine woods of North Carolina, their brothers and sisters be scattered through the cotton fields of Alabama and the rice swamps of Louisiana, while the parents might be left on the old plantation to wear out their weary lives in heavy grief, and lay their heads in far-off graves, over which their children might never weep."',
@@ -92,20 +103,9 @@ export const DETAILS: Details[] = [
 	],
     },
     {
-	title: 'The U.S. constitution does not apply to black people',
-	year: 1856,
-	body: 'The chief justice at this time, Roger Taney, was a former slave owner, as were four other justices on the Court. Dred Scott, an enslaved black man whose owners had taken him from slave-holding Missouri to the free territory (present day Minnesota) designated by the Missouri Compromise of 1820, sued his owner Sandford once he was in free territory. After eleven years, his case reached the Supreme Court, who ruled that as a black man, Scott was not a citizen of the United States and could not bring suit.',
-	citations: [
-	    {
-		source: 'U.S. History',
-		link: 'https://www.ushistory.org/us/32a.asp',
-	    },
-	],
-    },
-    {
 	title: 'Seven southern slave-holding states secede',
 	year: 1861,
-	body: 'We were so divided over slavery that we went to war with ourselves over it. The belief that a small group of rich slave owners had become so politically powerful (the Dred Scott vs. Sandford outcome was universally condemned in the Northern states) that they could seize the national government for themselves and expand the morally abhorrent practice of slavery became a festering sore in the American consciousness. President Lincoln describes to the Republican state convention: "A house divided against itself cannot stand. I believe this government cannot endure, permanently half slave and half free. I do not expect the Union to be dissolved - I do not expect the house to fall - but I do expect it will cease to be divided. It will become all one thing, or all the other. Either the opponents of slavery, will arrest the further spread of it, and place it where the public mind shall rest in the belief that it is in course of ultimate extinction; or its advocates will push it forward till it shall become alike lawful in all the States, old as well as new-North as well as South. Have we no tendency to the latter condition?" Shortly after Abraham Lincoln was inaugurated as the president, war broke out between the Union and Confederacy.',
+	body: 'We were so divided over slavery that we went to war with ourselves over it. The belief that a small group of rich slave owners had become so politically powerful (the Dred Scott vs. Sandford outcome was universally condemned in the Northern states) that they could seize the national government for themselves and expand the morally abhorrent practice of slavery became a festering sore in the American consciousness. As Lincoln describes to the Republican state convention: "A house divided against itself cannot stand. I believe this government cannot endure, permanently half slave and half free. I do not expect the Union to be dissolved - I do not expect the house to fall - but I do expect it will cease to be divided. It will become all one thing, or all the other. Either the opponents of slavery, will arrest the further spread of it, and place it where the public mind shall rest in the belief that it is in course of ultimate extinction; or its advocates will push it forward till it shall become alike lawful in all the States, old as well as new-North as well as South. Have we no tendency to the latter condition?" Shortly after Abraham Lincoln was inaugurated as the president, war broke out between the Union and Confederacy.',
 	citations: [
 	    {
 		source: 'American History USA',
