@@ -24,6 +24,7 @@ import { SystemicRacismViz, SystemicRacismDialog } from './components/viz/system
 import { Desktop } from './pages/desktop/desktop';
 import { Folder } from './pages/folder/folder';
 import { Post } from './pages/post/post';
+import { About } from './pages/about/about';
 
 @NgModule({
     imports: [
@@ -59,6 +60,7 @@ import { Post } from './pages/post/post';
 	Desktop,
 	Folder,
 	Post,
+	About,
     ],
     //providers: [],
     entryComponents: [SystemicRacismDialog],
