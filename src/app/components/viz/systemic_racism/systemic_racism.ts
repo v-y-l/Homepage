@@ -1,5 +1,5 @@
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { Component, AfterViewInit, Inject, OnInit } from '@angular/core';
+import { Component, AfterViewInit, Inject, OnInit, ViewChild } from '@angular/core';
 import { Details, DETAILS, MORE_DETAIL, DEFAULT_DETAIL } from './data';
 
 import * as d3 from 'd3';
@@ -188,6 +188,9 @@ export class SystemicRacismViz implements AfterViewInit {
 export class SystemicRacismDialog implements OnInit {
     blockIndex;
 
+    @ViewChild('matDialogTitle') title;
+    @ViewChild('matDialogContent') content;
+
     constructor(
 	public dialogRef: MatDialogRef<SystemicRacismViz>,
 	@Inject(MAT_DIALOG_DATA) public data: any) {}
@@ -215,5 +218,7 @@ export class SystemicRacismDialog implements OnInit {
 	this.data.svgContainer
 	    .select("#element"+this.blockIndex)
 	    .attr("opacity", .5);
+	this.title.nativeElement.scrollTop = 0;
+	this.content.nativeElement.scrollTop = 0;
     }
 }
