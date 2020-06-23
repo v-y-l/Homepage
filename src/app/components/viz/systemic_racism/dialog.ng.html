@@ -11,14 +11,14 @@
       <ng-container
 	*ngFor="let citation of data.events[blockIndex].details.citations;
 		let i = index">
+	<span *ngIf="i===0">Citations:&nbsp;</span>
 	<span fxHide.lt-md>
-	  {{citation.source}}:&nbsp;<a [href]="citation.link"
-				       target="_blank">{{citation.name}}</a>
+	  <a [href]="citation.link"
+	     target="_blank">{{citation.source}}</a>
 	  <span class="separator"
 		*ngIf="i < data.events[blockIndex].details.citations.length - 1">,&nbsp;</span>
 	</span>
 	<span fxHide.gt-sm>
-	  <span *ngIf="i===0">Citations:&nbsp;</span>
 	  <a [href]="citation.link"
 	     target="_blank">{{i+1}}</a>
 	  <span class="separator"
