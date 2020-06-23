@@ -92,7 +92,7 @@ export const DETAILS: Details[] = [
 	],
     },
         {
-	title: 'Seven Southern slave-holding states secede',
+	title: 'Seven southern slave-holding states secede',
 	year: 1861,
 	body: 'At a horse racetrack outside Savannah, Georgia, more than 400 enslaved people were auctioned off. They came from Major Pierce Butler’s plantations and had spent all of their lives enslaved together. Two and three generations deep, the men, women and children were separated and sold all across the continent. According to one account, "the man and wife might be sold to the pine woods of North Carolina, their brothers and sisters be scattered through the cotton fields of Alabama and the rice swamps of Louisiana, while the parents might be left on the old plantation to wear out their weary lives in heavy grief, and lay their heads in far-off graves, over which their children might never weep."',
 	citations: [
@@ -147,4 +147,16 @@ export const DETAILS: Details[] = [
 	    },
 	],
     },
+    {
+	title: 'Don\'t play together',
+	year: 1930,
+	body: '"It shall be unlawful for a negro and white person to play together or in company with each other in any game of cards or dice, dominoes or checkers." - City ordinance from Birmingham, Alabama.',
+	citations: [
+	    {
+		source: 'American Social History Project',
+		link: 'https://herb.ashp.cuny.edu/items/show/866',
+	    }
+	],
+    },
+
 ];
