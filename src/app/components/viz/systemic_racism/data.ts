@@ -150,7 +150,7 @@ export const DETAILS: Details[] = [
     {
 	title: 'Don\'t learn together',
 	year: 1929,
-	body: '"Separate free schools shall be established for the education of children of African descent; and it shall be unlawful for any colored child to attend any white school, or any white child to attend a colored school." - City ordinance from Missouri.',
+	body: 'Missouri state law: "Separate free schools shall be established for the education of children of African descent; and it shall be unlawful for any colored child to attend any white school, or any white child to attend a colored school."',
 	citations: [
 	    {
 		source: 'Smithsonian National Museum of American History',
@@ -161,7 +161,7 @@ export const DETAILS: Details[] = [
     {
 	title: 'Don\'t play together',
 	year: 1930,
-	body: '"It shall be unlawful for a negro and white person to play together or in company with each other in any game of cards or dice, dominoes or checkers." - City ordinance from Birmingham, Alabama.',
+	body: 'City ordinance from Birmingham, Alabama: "It shall be unlawful for a negro and white person to play together or in company with each other in any game of cards or dice, dominoes or checkers."',
 	citations: [
 	    {
 		source: 'American Social History Project',
