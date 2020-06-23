@@ -209,7 +209,7 @@ export const DETAILS: Details[] = [
     {
 	title: 'Four Los Angeles policemen acquitted of the savage beating of Rodney King',
 	year: 1992,
-	body: '',
+	body: 'A year earlier, King led police on a high-speed chase through Los Angeles and was charged with driving under the influence. When the LAPD finally stopped him, they gave King a savage beating with batons for 15 minutes, until his skull was fractured, bones were broken, and teeth were shattered, brain was damaged. All this was captured on camera. The four officers were charged with excessive use of force, but a year later, a jury consisting of 12 residents from the distant suburbs found the four officers innocent. LA Residents responded by setting fires, looting, and destroying liquor stores, grocery stores, retail shops and fast food restaurants.',
 	citations: [
 	    {
 		source: 'NPR',
