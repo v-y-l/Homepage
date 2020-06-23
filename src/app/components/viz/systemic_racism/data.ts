@@ -31,7 +31,7 @@ export const DETAILS: Details[] = [
     {
 	title: '20 and odd slaves land in Virginia',
 	year: 1619,
-	body: 'A privateer with a letter of marque, The English warship White Lion legally stole "20 and odd" slaves from a Portuguese ship headed to Veracruz. Most of the enslaved are believed to have been captured during an ongoing war between Portugal and the kingdom of Ndongo. These people were then traded away by the captain to the colony for food. This signals the custom of slavery in Virginia, from which laws later sprung from. Because slavery has yet been codified into law, these prisoners of war were technically indentured servants. Notably, this was a time of food scarcity, as Jamestown was built in a marsh of infertile land and malaria-harboring mosquitos, so with certainty, these "indentured servants" were put to good use.',
+	body: 'The English warship White Lion, as a privateer with a letter of marque, legally stole "20 and odd" slaves from a Portuguese ship headed to Veracruz. Most of the enslaved are believed to have been captured during an ongoing war between Portugal and the kingdom of Ndongo. These people were then traded away by the captain to the colony for food. This signals the custom of slavery in Virginia, from which laws later sprung from. Because slavery has yet been codified into law, these prisoners of war were technically indentured servants. Notably, this was a time of food scarcity, as Jamestown was built in a marsh of infertile land and malaria-harboring mosquitos, so with certainty, these "indentured servants" were put to good use.',
 	citations: [
 	    {
 		source: 'National Park Service',
@@ -94,11 +94,11 @@ export const DETAILS: Details[] = [
         {
 	title: 'Seven southern slave-holding states secede',
 	year: 1861,
-	body: 'At a horse racetrack outside Savannah, Georgia, more than 400 enslaved people were auctioned off. They came from Major Pierce Butler’s plantations and had spent all of their lives enslaved together. Two and three generations deep, the men, women and children were separated and sold all across the continent. According to one account, "the man and wife might be sold to the pine woods of North Carolina, their brothers and sisters be scattered through the cotton fields of Alabama and the rice swamps of Louisiana, while the parents might be left on the old plantation to wear out their weary lives in heavy grief, and lay their heads in far-off graves, over which their children might never weep."',
+	body: '',
 	citations: [
 	    {
-		source: 'Washington Post',
-		link: 'https://www.washingtonpost.com/education/2019/08/28/historians-slavery-myths/?arc404=true',
+		source: 'PBS',
+		link: 'https://www.pbs.org/opb/historydetectives/feature/causes-of-the-civil-war',
 	    },
 	],
     },
@@ -135,7 +135,7 @@ export const DETAILS: Details[] = [
     {
 	title: 'Black Wall Street gets burned down and slaughtered',
 	year: 1921,
-	body: 'By the 1920s, the African American community in Tulsa, Oklahoma emerged as a renownd entrepreneurial hub, with its Greenwood district known as "Black Wall Street". Black educator, entrepreneur, and landowner, O.W. Gurley owned rental properties, a rooming house, a grocery store, and a hotel. J.B. Stradford, a lawyer, owned another of the area’s several hotels. Simon Berry ran a jitney, a bus line, a charter plane service, and a hotel. The Williams Family owned a theater, a garage, a confectionery, and a rooming house. Dr. A.C. Jackson, called the “most able negro surgeon in America” by the Mayo brothers of the Mayo Clinic, broke the color line, attending to black and white patients alike. This was just a sliver of the talent in this burgeoning community, abruptly ended by the thousands of jealous armed white men, some carrying machine guns and deputized by local law enforcement, that invaded the Greenwood district. They gunned people down (including Dr. A.C. Jackson of the Mayo Clinic, who had his hands raised in surrender), set fires throughout the district, and organized planes to drop bombs on the Greenwood district. In less than 24 hours, a white mob reduced a vibrant, 35-block area to rubble and dead bodies. The majority of Tulsa\'s African American population became homeless by the end of the day and thousands were forced to spend that winter living in tents.',
+	body: 'By the 1920s, the African American community in Tulsa, Oklahoma emerged as a renowned entrepreneurial hub, with its Greenwood district known as "Black Wall Street". Black educator, entrepreneur, and landowner, O.W. Gurley owned rental properties, a rooming house, a grocery store, and a hotel. J.B. Stradford, a lawyer, owned another of the area’s several hotels. Simon Berry ran a jitney, a bus line, a charter plane service, and a hotel. The Williams Family owned a theater, a garage, a confectionery, and a rooming house. Dr. A.C. Jackson, called the “most able negro surgeon in America” by the Mayo brothers of the Mayo Clinic, broke the color line, attending to black and white patients alike. This was just a sliver of the talent in this burgeoning community, abruptly ended by the thousands of jealous armed white men, some carrying machine guns and deputized by local law enforcement, that invaded the Greenwood district. They gunned people down (including Dr. A.C. Jackson of the Mayo Clinic, who had his hands raised in surrender), set fires throughout the district, and organized planes to drop bombs on the Greenwood district. In less than 24 hours, a white mob reduced a vibrant, 35-block area to rubble and dead bodies. The majority of Tulsa\'s African American population became homeless by the end of the day and thousands were forced to spend that winter living in tents.',
 	citations: [
 	    {
 		source: 'Oklahoma Historical Society',
