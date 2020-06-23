@@ -169,4 +169,15 @@ export const DETAILS: Details[] = [
 	    }
 	],
     },
+    {
+	title: 'The leader of civil rights movements gets assassinated',
+	year: 1963,
+	body: '',
+	citations: [
+	    {
+		source: 'History Channel',
+		link: 'https://www.history.com/topics/black-history/martin-luther-king-jr-assassination',
+	    },
+	],
+    }
 ];
