@@ -94,7 +94,7 @@ export const DETAILS: Details[] = [
     {
 	title: 'The U.S. constitution does not apply to black people',
 	year: 1856,
-	body: 'The chief justice at this time, Roger Taney, was a former slave owner, as were four other justices on the Court. Dred Scott, an enslaved black man whose owners had taken him from slave-holding Missouri to the free territory (present day Minnesota) designated by the Missouri Compromise of 1820, sued his owner Sandford once he was in free territory. After eleven years, his case reached the Supreme Court, who ruled it violated the 5th amendment ("nor shall private property be taken for public use", Dred Scott being a slave and therefore property). The court also ruled that as a black man, Scott was not a citizen of the United States and could not bring suit.',
+	body: 'The chief justice at this time, Roger Taney, was a former slave owner, as were four other justices on the Court. Dred Scott, an enslaved black man whose owners had taken him from slave-holding Missouri to the free territory (present day Minnesota) designated by the Missouri Compromise of 1820, sued his owner Sandford once he was in free territory. After eleven years, his case reached the Supreme Court, who ruled that as a black man, Scott was not a citizen of the United States and could not bring suit.',
 	citations: [
 	    {
 		source: 'U.S. History',
