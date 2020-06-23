@@ -31,7 +31,7 @@ export const DETAILS: Details[] = [
     {
 	title: '20 and odd slaves land in Virginia',
 	year: 1619,
-	body: 'As a privateer with a letter of marque, The English warship White Lion legally stole "20 and odd" slaves from a Portuguese ship headed to Veracruz. Most of the enslaved are believed to have been captured during an ongoing war between Portugal and the kingdom of Ndongo. These people were then traded away by the captain to the colony for food. This signals the custom of slavery in Virginia, from which laws later sprung from. Because slavery has yet been codified into law, these prisoners of war were technically indentured servants. Notably, this was a time of food scarcity, as Jamestown was built in a marsh of infertile land and malaria-harboring mosquitos, so with certainty, these "indentured servants" were put to good use.',
+	body: 'A privateer with a letter of marque, The English warship White Lion legally stole "20 and odd" slaves from a Portuguese ship headed to Veracruz. Most of the enslaved are believed to have been captured during an ongoing war between Portugal and the kingdom of Ndongo. These people were then traded away by the captain to the colony for food. This signals the custom of slavery in Virginia, from which laws later sprung from. Because slavery has yet been codified into law, these prisoners of war were technically indentured servants. Notably, this was a time of food scarcity, as Jamestown was built in a marsh of infertile land and malaria-harboring mosquitos, so with certainty, these "indentured servants" were put to good use.',
 	citations: [
 	    {
 		source: 'National Park Service',
@@ -50,7 +50,7 @@ export const DETAILS: Details[] = [
     {
 	title: 'The first racist gun law',
 	year: 1639,
-	body: 'This year saw the instutition of two racist weapons statutes in Virginia: the first "prohibits negroes, slave and free, from carrying weapons including clubs," while the second states that "all such free Mulattoes, Negroes and Indians...shall appear without arms". Altogether an unsurprising set of laws, seeing as Native Americans saw the colonists as invaders and reacted to their settlement by massacring almost 400 colonists in 1622 (a third of the Jamestown population).',
+	body: 'This year instituted two racist weapons statutes in Virginia: the first "prohibits negroes, slave and free, from carrying weapons including clubs," while the second states that "all such free Mulattoes, Negroes and Indians...shall appear without arms". Altogether an unsurprising set of laws, seeing as Native Americans saw the colonists as invaders and reacted to their settlement by massacring almost 400 colonists in 1622 (a third of the Jamestown population).',
 	citations: [
 	    {
 		source: 'Sedgwick County',
@@ -145,6 +145,17 @@ export const DETAILS: Details[] = [
 		source: 'The Guardian',
 		link: 'https://www.theguardian.com/commentisfree/2020/jun/19/tulsa-1921-massacre-trump-violence-legacy',
 	    },
+	],
+    },
+    {
+	title: 'Don\'t ride together',
+	year: 1891,
+	body: 'Tennesee state law: "All railroads carrying passengers in the state (other than street railroads) shall provide equal but separate accommodations for the white and colored races, by providing two or more passenger cars for each passenger train, or by dividing the cars by a partition, so as to secure separate accommodations."',
+	citations: [
+	    {
+		source: 'Smithsonian National Museum of American History',
+		link: 'https://americanhistory.si.edu/brown/history/1-segregated/jim-crow.html',
+	    }
 	],
     },
     {
