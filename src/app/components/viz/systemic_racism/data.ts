@@ -50,7 +50,7 @@ export const DETAILS: Details[] = [
     {
 	title: 'The first racist gun law',
 	year: 1639,
-	body: 'This year instituted two racist weapons statutes in Virginia: the first "prohibits negroes, slave and free, from carrying weapons including clubs," while the second states that "all such free Mulattoes, Negroes and Indians...shall appear without arms". Altogether an unsurprising set of laws, seeing as Native Americans saw the colonists as invaders and reacted to their settlement by massacring almost 400 colonists in 1622 (a third of the Jamestown population).',
+	body: 'This year instituted two racist weapons statutes in Virginia: the first "prohibits negroes, slave and free, from carrying weapons including clubs," while the second states that "all such free Mulattoes, Negroes and Indians...shall appear without arms". Altogether an unsurprising set of laws, seeing that Native Americans were antagonistic, saw the colonists as invaders, and reacted to their settlement by massacring almost 400 colonists in 1622 (a third of the Jamestown population).',
 	citations: [
 	    {
 		source: 'Sedgwick County',
@@ -189,6 +189,17 @@ export const DETAILS: Details[] = [
 		source: 'History Channel',
 		link: 'https://www.history.com/topics/black-history/martin-luther-king-jr-assassination',
 	    },
+	],
+    },
+    {
+	title: 'Four Los Angeles policemen acquitted of the savage beating of Rodney King',
+	year: 1992,
+	body: '',
+	citations: [
+	    {
+		source: 'NPR',
+		link: 'https://www.npr.org/2017/04/26/524744989/when-la-erupted-in-anger-a-look-back-at-the-rodney-king-riots',
+	    }
 	],
     }
 ];
