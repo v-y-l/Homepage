@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 
+declare var ol: any;
+
 @Component({
     selector: 'about',
     templateUrl: './about.ng.html',
