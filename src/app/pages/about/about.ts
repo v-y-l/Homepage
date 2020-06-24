@@ -7,9 +7,22 @@ import { Router } from '@angular/router';
     templateUrl: './about.ng.html',
 })
 export class About {
+    latitude: number = 18.5204;
+    longitude: number = 73.8567;
 
-    constructor(
-	private router: Router,
-    ) {
+    map: any;
+
+    ngOnInit() {
+	this.map = new ol.Map({
+	    target: 'map',
+	    layers: [
+		new ol.layer.Tile({
+		    source: new ol.source.OSM()
+		})
+	    ],
+	    view: new ol.View({
+		center: ol.proj.fromLonLat([73.8567, 18.5204]),
+		zoom: 8
+	    })
+	});
     }
-}
