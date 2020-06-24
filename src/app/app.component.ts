@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
+declare var ol: any;
+
 @Component({
   selector: 'root',
   template: `

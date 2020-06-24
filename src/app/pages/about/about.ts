@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 @Component({
     selector: 'about',
     templateUrl: './about.ng.html',
-    
+    styleUrls: ['./about.css']
 })
 export class About implements OnInit {
     latitude: number = 18.5204;
