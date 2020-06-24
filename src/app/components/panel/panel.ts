@@ -8,6 +8,8 @@ import { Component, Input } from '@angular/core';
 })
 export class Panel {
 
+    @Input() name: string;
+
     constructor(
 	private router: Router,
     ) {}

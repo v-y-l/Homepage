@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 
 @Component({
     selector: 'about',
     templateUrl: './about.ng.html',
+    
 })
-export class About {
+export class About implements OnInit {
     latitude: number = 18.5204;
     longitude: number = 73.8567;
 
@@ -22,7 +23,8 @@ export class About {
 	    ],
 	    view: new ol.View({
 		center: ol.proj.fromLonLat([73.8567, 18.5204]),
-		zoom: 8
+		zoom: 8,
 	    })
 	});
     }
+}
