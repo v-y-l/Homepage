@@ -31,11 +31,7 @@ export class About implements OnInit {
     }
 
     goToTaipei() {
-	const tpView = new ol.View({
-	    center: ol.proj.fromLonLat([25.0330, 121.121.5654]),
-	    zoom: 8,
-	});
-
-	this.map.setView(tpView);
+	const tpLonLat = [25.0330, 121.121.5654];
+	this.map.getView().setCenter(tpLonLat);
     }
 }
