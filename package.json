@@ -19,7 +19,6 @@
     "@angular/core": "6.0.0",
     "@angular/flex-layout": "^6.0.0-beta.15",
     "@angular/forms": "6.0.0",
-    "@angular/google-maps": "^9.2.4",
     "@angular/http": "6.0.0",
     "@angular/material": "^6.0.0",
     "@angular/platform-browser": "6.0.0",
