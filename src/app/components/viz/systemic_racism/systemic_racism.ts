@@ -2,7 +2,7 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dial
 import { Component, AfterViewInit, Inject, OnInit, ViewChild } from '@angular/core';
 import { Details, DETAILS, MORE_DETAIL, DEFAULT_DETAIL } from './data';
 
-import * as d3 from 'd3';
+declare var d3: any;
 
 /** Each event represents a historic event reinforcing racism. */
 interface Event {

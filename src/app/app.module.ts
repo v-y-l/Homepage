@@ -7,7 +7,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { MatDialogModule } from '@angular/material/dialog';
-import { GoogleMapsModule } from '@angular/google-maps'
 
 import { HttpClientInMemoryWebApiModule, InMemoryDbService } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
@@ -38,7 +37,6 @@ import { About } from './pages/about/about';
 	MatDialogModule,
 	HttpClientModule,
 	BrowserAnimationsModule,
-	GoogleMapsModule,
 	HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
 	    dataEncapsulation: false,
 	    delay: 300,
