@@ -24,14 +24,14 @@ export class About implements OnInit {
 		})
 	    ],
 	    view: new ol.View({
-		center: ol.proj.fromLonLat([73.8567, 18.5204]),
+		center: ol.proj.fromLonLat([23.882134, 121.081183]),
 		zoom: 8,
 	    })
 	});
     }
 
     goToTaipei() {
-	const tpLonLat = [25.0330, 121.121.5654];
+	const tpLonLat = [25.0330, 123.5654];
 	this.map.getView().setCenter(tpLonLat);
     }
 }

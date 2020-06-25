@@ -1,6 +1,12 @@
 .panel {
     margin: 20px;
-    height: 79%;
+    height: 84%;
+}
+
+@media screen and (max-height: 800px) {
+    .panel {
+	height: 81%;
+    }
 }
 
 .header {
