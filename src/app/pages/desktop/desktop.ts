@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Router } from '@angular/router';
 
 import { FileType } from '../../interfaces/file';
 
@@ -10,9 +9,4 @@ import { FileType } from '../../interfaces/file';
 })
 export class Desktop {
     FileType = FileType;
-
-    constructor(
-	private router: Router,
-    ) {
-    }
 }

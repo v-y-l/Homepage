@@ -22,7 +22,14 @@ export class Shortcut {
     ) {}
 
     goToShortcut() {
-	const link = [this.fileType, this.id];
+	let link;
+	if (this.fileType === FileType.Folder
+	    || this.fileType === FileType.Post) {
+	    link = [this.fileType, this.id];
+	} else {
+	    link = [this.fileType];
+	}
+
 	this.router.navigate(link);
     }
 }

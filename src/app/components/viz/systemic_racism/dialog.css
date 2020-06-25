@@ -8,7 +8,6 @@ h1 {
 
 h1.mat-dialog-title {
     max-height: 65px;
-    overflow: scroll;
 }
 
 div.mat-dialog-content {
@@ -27,4 +26,16 @@ div.button-container {
 
 div.citations-container {
     width: 100%;
+}
+
+.x-button {
+    width: 10px;
+    min-width: 10px;
+    padding: 0px 22px 0px 16px;
+}
+
+@media screen and (max-width: 840px) {
+    h1.mat-dialog-title {
+	overflow: scroll;
+    }
 }

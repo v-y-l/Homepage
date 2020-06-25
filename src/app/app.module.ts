@@ -7,6 +7,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { MatDialogModule } from '@angular/material/dialog';
+import { GoogleMapsModule } from '@angular/google-maps'
 
 import { HttpClientInMemoryWebApiModule, InMemoryDbService } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
@@ -24,6 +25,7 @@ import { SystemicRacismViz, SystemicRacismDialog } from './components/viz/system
 import { Desktop } from './pages/desktop/desktop';
 import { Folder } from './pages/folder/folder';
 import { Post } from './pages/post/post';
+import { About } from './pages/about/about';
 
 @NgModule({
     imports: [
@@ -36,6 +38,7 @@ import { Post } from './pages/post/post';
 	MatDialogModule,
 	HttpClientModule,
 	BrowserAnimationsModule,
+	GoogleMapsModule,
 	HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
 	    dataEncapsulation: false,
 	    delay: 300,
@@ -59,6 +62,7 @@ import { Post } from './pages/post/post';
 	Desktop,
 	Folder,
 	Post,
+	About,
     ],
     //providers: [],
     entryComponents: [SystemicRacismDialog],

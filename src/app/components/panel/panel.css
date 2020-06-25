@@ -1,6 +1,12 @@
 .panel {
     margin: 20px;
-    height: 79%;
+    height: 84%;
+}
+
+@media screen and (max-height: 800px) {
+    .panel {
+	height: 81%;
+    }
 }
 
 .header {
@@ -16,6 +22,7 @@
     border-radius: 0px 0px 5px 5px;
     border: 1px 1px 0px 1px solid rgb(135,127,126);
     height: 100%;
+    overflow-y: hidden;
 }
 
 .close-button {
