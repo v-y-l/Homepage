@@ -10,8 +10,9 @@ declare var ol: any;
     styleUrls: ['./about.css']
 })
 export class About implements OnInit {
-    latitude: number = 18.5204;
-    longitude: number = 73.8567;
+    latitude: number = 25.08580655;
+
+    longitude: number = 121.56435563960218;
 
     map: any;
 
