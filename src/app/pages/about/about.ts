@@ -29,5 +29,19 @@ export class About implements OnInit {
 		zoom: 8,
 	    })
 	});
+	this.addMarker();
+    }
+
+    addMarker() {
+	 var layer = new ol.layer.Vector({
+	     source: new ol.source.Vector({
+		 features: [
+		     new ol.Feature({
+			 geometry: new ol.geom.Point(ol.proj.fromLonLat([this.longitude, this.latitude]))
+		     })
+		 ]
+	     })
+	 });
+	this.map.addLayer(layer);
     }
 }
