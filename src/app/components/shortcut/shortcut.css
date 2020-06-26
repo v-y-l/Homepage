@@ -13,3 +13,8 @@
 .tile:hover {
     background: #a7a7a773;
 }
+
+img {
+    width: 48px;
+    height: 48px;
+}
