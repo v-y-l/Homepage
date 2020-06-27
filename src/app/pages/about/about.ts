@@ -19,8 +19,7 @@ export class About implements AfterViewInit {
 
     ngAfterViewInit() {
 	const position = ol.proj.fromLonLat([this.longitude, this.latitude]);
-	const overlay = new ol.Overlay({
-	    position,
+	const overlay = new ol.control.Control({
 	    element : this.overlayElement.nativeElement,
 	});
 	this.map = new ol.Map({
@@ -30,7 +29,7 @@ export class About implements AfterViewInit {
 		    source: new ol.source.OSM()
 		})
 	    ],
-	    overlays: [overlay],
+	    controls: [overlay],
 	    view: new ol.View({
 		center: position,
 		zoom: 7,

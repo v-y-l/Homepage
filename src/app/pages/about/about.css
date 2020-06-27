@@ -8,6 +8,8 @@
 
 .overlay {
     position: absolute;
+    bottom: .5em;
+    left: .5em;
     background: white;
     width: 200px;
     height: 200px;
