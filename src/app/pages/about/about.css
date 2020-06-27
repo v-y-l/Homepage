@@ -5,3 +5,7 @@
 .button {
     z-index: 2;
 }
+
+.overlay {
+    background: black;
+}

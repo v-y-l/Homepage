@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, AfterViewInit, ViewChild } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 
@@ -9,14 +9,19 @@ declare var ol: any;
     templateUrl: './about.ng.html',
     styleUrls: ['./about.css']
 })
-export class About implements OnInit {
-    latitude: number = 25.08580655;
-
-    longitude: number = 121.56435563960218;
+export class About implements AfterViewInit {
+    latitude: number = 23.8629809;
+    longitude: number = 121.16388;
 
     map: any;
 
-    ngOnInit() {
+    @ViewChild('overlay') overlayElement: ElementRef;
+
+    ngAfterViewInit() {
+	const overlay = new ol.Overlay({
+	    positioning: 'top-center',
+	    element : this.overlayElement.nativeElement,
+	});
 	this.map = new ol.Map({
 	    target: 'map',
 	    layers: [
@@ -24,9 +29,10 @@ export class About implements OnInit {
 		    source: new ol.source.OSM()
 		})
 	    ],
+	    overlays: [overlay],
 	    view: new ol.View({
 		center: ol.proj.fromLonLat([this.longitude, this.latitude]),
-		zoom: 8,
+		zoom: 7,
 	    })
 	});
 	this.addMarker();
