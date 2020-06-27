@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, ViewChild } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 
@@ -18,8 +18,9 @@ export class About implements AfterViewInit {
     @ViewChild('overlay') overlayElement: ElementRef;
 
     ngAfterViewInit() {
+	const position = ol.proj.fromLonLat([this.longitude, this.latitude]);
 	const overlay = new ol.Overlay({
-	    positioning: 'top-center',
+	    position,
 	    element : this.overlayElement.nativeElement,
 	});
 	this.map = new ol.Map({
@@ -31,7 +32,7 @@ export class About implements AfterViewInit {
 	    ],
 	    overlays: [overlay],
 	    view: new ol.View({
-		center: ol.proj.fromLonLat([this.longitude, this.latitude]),
+		center: position,
 		zoom: 7,
 	    })
 	});
