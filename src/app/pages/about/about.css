@@ -6,11 +6,15 @@
     z-index: 2;
 }
 
-.overlay {
+.about-box {
     position: absolute;
     bottom: .5em;
     left: .5em;
     background: white;
     width: 200px;
     height: 200px;
+    border-top-right-radius:8px;
+    border-top-style:solid;
+    border-top-width:1.33333px;
+    box-shadow:rgba(0, 0, 0, 0.3) 0px 2px 4px 0px;
 }

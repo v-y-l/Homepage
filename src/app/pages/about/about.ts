@@ -15,12 +15,12 @@ export class About implements AfterViewInit {
 
     map: any;
 
-    @ViewChild('overlay') overlayElement: ElementRef;
+    @ViewChild('aboutBox') aboutBox: ElementRef;
 
     ngAfterViewInit() {
 	const position = ol.proj.fromLonLat([this.longitude, this.latitude]);
 	const overlay = new ol.control.Control({
-	    element : this.overlayElement.nativeElement,
+	    element : this.aboutBox.nativeElement,
 	});
 	this.map = new ol.Map({
 	    target: 'map',
@@ -43,7 +43,8 @@ export class About implements AfterViewInit {
 	     source: new ol.source.Vector({
 		 features: [
 		     new ol.Feature({
-			 geometry: new ol.geom.Point(ol.proj.fromLonLat([this.longitude, this.latitude]))
+			 geometry: new ol.geom.Point(ol.proj.fromLonLat(
+			     [this.longitude, this.latitude]))
 		     })
 		 ]
 	     })
