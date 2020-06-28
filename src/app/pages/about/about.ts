@@ -42,9 +42,36 @@ export class About implements AfterViewInit {
 
     onPrevious() {
 	this.pointIndex -= 1;
+	const position =
+	    ol.proj.fromLonLat([this.points[this.pointIndex].longitude,
+				this.points[this.pointIndex].latitude]);
+	this.flyTo(position);
     }
 
     onNext() {
 	this.pointIndex += 1;
+	const position =
+	    ol.proj.fromLonLat([this.points[this.pointIndex].longitude,
+				this.points[this.pointIndex].latitude]);
+	this.flyTo(position);
+    }
+
+    flyTo(location) {
+	const view = this.map.getView();
+	var duration = 2000;
+	var zoom = view.getZoom();
+	var parts = 2;
+	var called = false;
+	view.animate({
+	    center: location,
+	    duration: duration
+	});
+	view.animate({
+	    zoom: zoom - 1,
+	    duration: duration / 2
+	}, {
+	    zoom,
+	    duration: duration / 2
+	});
     }
 }
