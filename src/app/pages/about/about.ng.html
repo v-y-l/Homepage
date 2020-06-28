@@ -1,5 +1,16 @@
 <panel [name]="'About'">
   <ng-container content>
+    <div #aboutBox class="about-box">
+      <div>
+	<b>{{points[pointIndex].title}}.</b> {{points[pointIndex].description}}
+      </div>
+      <div class="button-container" fxLayout="row-reverse">
+	<button mat-button [disabled]="pointIndex === points.length - 1"
+		(click)="onNext()">Next</button>
+	<button mat-button [disabled]="pointIndex === 0"
+		(click)="onPrevious()">Previous</button>
+      </div>
+    </div>
     <div id="map" class="map"></div>
   </ng-container>
 </panel>
