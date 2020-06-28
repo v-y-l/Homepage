@@ -58,7 +58,7 @@ export class About implements AfterViewInit {
 
     flyTo(location) {
 	const view = this.map.getView();
-	var duration = 2000;
+	var duration = 10000;
 	var zoom = view.getZoom();
 	var parts = 2;
 	var called = false;
