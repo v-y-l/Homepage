@@ -10,7 +10,7 @@ export const POINTS: PointOfInterest[] = [
     {
 	latitude: 49.1783514,
 	longitude: -123.2764278,
-	zoom: 4,
+	zoom: 8,
 	title: 'Richmond, Canada',
 	description: 'I was born here.',
     },

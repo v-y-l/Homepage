@@ -20,6 +20,7 @@ export class About implements AfterViewInit {
 
     ngAfterViewInit() {
 	const position = this.getCurrentPosition();
+	const zoom = this.getCurrentZoom();
 	const overlay = new ol.control.Control({
 	    element : this.aboutBox.nativeElement,
 	});
@@ -33,7 +34,7 @@ export class About implements AfterViewInit {
 	    controls: [overlay],
 	    view: new ol.View({
 		center: position,
-		zoom: 7,
+		zoom,
 	    })
 	});
     }
