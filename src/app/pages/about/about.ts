@@ -44,24 +44,30 @@ export class About implements AfterViewInit {
 	     this.points[this.pointIndex].latitude]);
     }
 
+    getCurrentZoom() {
+	return this.points[this.pointIndex].zoom;
+    }
+
+
     onPrevious() {
 	this.pointIndex -= 1;
 	const position = this.getCurrentPosition();
-	this.flyTo(position);
+	const zoom = this.getCurrentZoom();
+	this.flyTo(position, zoom);
     }
 
     onNext() {
 	this.pointIndex += 1;
 	const position = this.getCurrentPosition();
-	this.flyTo(position);
+	const zoom = this.getCurrentZoom();
+	this.flyTo(position, zoom);
     }
 
-    flyTo(position) {
+    flyTo(position, zoom) {
 	const view = this.map.getView();
-	var zoom = view.getZoom();
 	var duration = 500;
 	view.animate({
-	    zoom: 7,
+	    zoom,
 	    center: position,
 	});
     }
