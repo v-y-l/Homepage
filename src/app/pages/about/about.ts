@@ -61,7 +61,7 @@ export class About implements AfterViewInit {
 	var zoom = view.getZoom();
 	var duration = 500;
 	view.animate({
-	    zoom: 6,
+	    zoom: 7,
 	    center: position,
 	});
     }
