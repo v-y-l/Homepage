@@ -1,6 +1,7 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
+import { POINTS, PointOfInterest } from './data';
 
 declare var ol: any;
 
@@ -10,15 +11,16 @@ declare var ol: any;
     styleUrls: ['./about.css']
 })
 export class About implements AfterViewInit {
-    latitude: number = 23.8629809;
-    longitude: number = 121.16388;
+    points: PointOfInterest[] = POINTS;
+    point: PointOfInterest = this.points[0];
 
     map: any;
 
     @ViewChild('aboutBox') aboutBox: ElementRef;
 
     ngAfterViewInit() {
-	const position = ol.proj.fromLonLat([this.longitude, this.latitude]);
+	const position =
+	    ol.proj.fromLonLat([this.point.longitude, this.point.latitude]);
 	const overlay = new ol.control.Control({
 	    element : this.aboutBox.nativeElement,
 	});
@@ -35,20 +37,5 @@ export class About implements AfterViewInit {
 		zoom: 7,
 	    })
 	});
-	this.addMarker();
-    }
-
-    addMarker() {
-	 var layer = new ol.layer.Vector({
-	     source: new ol.source.Vector({
-		 features: [
-		     new ol.Feature({
-			 geometry: new ol.geom.Point(ol.proj.fromLonLat(
-			     [this.longitude, this.latitude]))
-		     })
-		 ]
-	     })
-	 });
-	this.map.addLayer(layer);
     }
 }
