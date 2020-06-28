@@ -12,7 +12,7 @@ declare var ol: any;
 })
 export class About implements AfterViewInit {
     points: PointOfInterest[] = POINTS;
-    point: PointOfInterest = this.points[0];
+    pointIndex: number = 0;
 
     map: any;
 
@@ -20,7 +20,8 @@ export class About implements AfterViewInit {
 
     ngAfterViewInit() {
 	const position =
-	    ol.proj.fromLonLat([this.point.longitude, this.point.latitude]);
+	    ol.proj.fromLonLat([this.points[this.pointIndex].longitude,
+				this.points[this.pointIndex].latitude]);
 	const overlay = new ol.control.Control({
 	    element : this.aboutBox.nativeElement,
 	});
@@ -37,5 +38,13 @@ export class About implements AfterViewInit {
 		zoom: 7,
 	    })
 	});
+    }
+
+    onPrevious() {
+	this.pointIndex -= 1;
+    }
+
+    onNext() {
+	this.pointIndex += 1;
     }
 }

@@ -1,7 +1,11 @@
 <panel [name]="'About'">
   <ng-container content>
     <div #aboutBox class="about-box">
-      {{point.title}}: {{point.description}}
+      {{points[pointIndex].title}}: {{points[pointIndex].description}}
+      <button mat-button [disabled]="pointIndex === 0"
+	      (click)="onPreviousPoint()">Previous</button>
+      <button mat-button [disabled]="pointsIndex === points.length - 1"
+	      (click)="onNextPoint()">Next</button>
     </div>
     <div id="map" class="map"></div>
   </ng-container>
