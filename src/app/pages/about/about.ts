@@ -19,9 +19,7 @@ export class About implements AfterViewInit {
     @ViewChild('aboutBox') aboutBox: ElementRef;
 
     ngAfterViewInit() {
-	const position =
-	    ol.proj.fromLonLat([this.points[this.pointIndex].longitude,
-				this.points[this.pointIndex].latitude]);
+	const position = this.getCurrentPosition();
 	const overlay = new ol.control.Control({
 	    element : this.aboutBox.nativeElement,
 	});
@@ -40,28 +38,28 @@ export class About implements AfterViewInit {
 	});
     }
 
+    getCurrentPosition() {
+	return ol.proj.fromLonLat(
+	    [this.points[this.pointIndex].longitude,
+	     this.points[this.pointIndex].latitude]);
+    }
+
     onPrevious() {
 	this.pointIndex -= 1;
-	const position =
-	    ol.proj.fromLonLat([this.points[this.pointIndex].longitude,
-				this.points[this.pointIndex].latitude]);
+	const position = this.getCurrentPosition();
 	this.flyTo(position);
     }
 
     onNext() {
 	this.pointIndex += 1;
-	const position =
-	    ol.proj.fromLonLat([this.points[this.pointIndex].longitude,
-				this.points[this.pointIndex].latitude]);
+	const position = this.getCurrentPosition();
 	this.flyTo(position);
     }
 
-    flyTo(location) {
+    flyTo(position) {
 	const view = this.map.getView();
 	var duration = 500;
 	var zoom = view.getZoom();
-	var parts = 2;
-	var called = false;
 	view.animate({
 	    center: location,
 	    duration: duration
