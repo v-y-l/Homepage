@@ -11,11 +11,11 @@
     bottom: .5em;
     left: .5em;
     background: white;
-    left: 10%;
-    bottom: 10%;
-    width: 80%;
-    height: 20%;
+    left: 5%;
+    bottom: 5%;
+    width: 84%;
     border-radius:8px;
     border-top-width:1.33333px;
     box-shadow:rgba(0, 0, 0, 0.3) 0px 2px 4px 0px;
+    padding: 10px;
 }
