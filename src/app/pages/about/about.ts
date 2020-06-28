@@ -58,18 +58,11 @@ export class About implements AfterViewInit {
 
     flyTo(position) {
 	const view = this.map.getView();
-	var duration = 500;
 	var zoom = view.getZoom();
+	var duration = 500;
 	view.animate({
-	    center: location,
-	    duration: duration
-	});
-	view.animate({
-	    zoom: zoom - 1,
-	    duration: duration / 2
-	}, {
-	    zoom,
-	    duration: duration / 2
+	    zoom: 6,
+	    center: position,
 	});
     }
 }
