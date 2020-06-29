@@ -26,10 +26,12 @@ export class Shortcut {
 	if (this.fileType === FileType.Folder
 	    || this.fileType === FileType.Post) {
 	    link = [this.fileType, this.id];
+	    this.router.navigate(link);
+	} else if (this.fileType === FileType.Resume) {
+	    window.open('https://drive.google.com/file/d/1GOkKzzs57FJ3fCZod4F-50rDRfbeO-T4/view');
 	} else {
 	    link = [this.fileType];
+	    this.router.navigate(link);
 	}
-
-	this.router.navigate(link);
     }
 }
