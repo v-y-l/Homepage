@@ -3,6 +3,7 @@ export enum FileType {
     Terminal = 'terminal',
     Post = 'post',
     About = 'about',
+    Resume = 'resume',
 }
 
 export interface File {

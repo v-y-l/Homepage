@@ -1,12 +1,17 @@
-<div fxLayout="row">
+<div fxLayout="row wrap">
+  <shortcut
+    [name]="'About'"
+    [fileType]="FileType.About"
+    [id]="2">
+  </shortcut>
   <shortcut
     [name]="'BLM'"
     [fileType]="FileType.Folder"
     [id]="1">
   </shortcut>
   <shortcut
-    [name]="'About'"
-    [fileType]="FileType.About"
-    [id]="2">
+    [name]="'Resume'"
+    [fileType]="FileType.Resume"
+    [id]="-1">
   </shortcut>
 </div>
