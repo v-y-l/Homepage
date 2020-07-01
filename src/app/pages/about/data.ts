@@ -33,6 +33,6 @@ export const POINTS: PointOfInterest[] = [
 	longitude: -71.110711,
 	zoom: 6,
 	title: 'Boston, Massachussetts',
-	description: 'I moved to Boston for work after I graduated.',
+	description: 'I moved to Boston for work after I graduated. Bostonians strike me as some of the most down-to-earth, intelligent people on the planet. This is certainly true of most of my friends, who are from Tufts, of my colleagues at NextJump and now Google, and of my girlfriend who is from Medford. It was here, during the COVID-19 quarantine, that I decided to start working on this blog.',
     },
 ];
