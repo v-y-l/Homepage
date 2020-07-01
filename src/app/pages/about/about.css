@@ -23,3 +23,8 @@
 .button-container {
     margin-top: 5px;
 }
+
+.content-container {
+    overflow-y: scroll;
+    max-height: 150px;
+}

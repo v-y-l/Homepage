@@ -12,7 +12,7 @@ export const POINTS: PointOfInterest[] = [
 	longitude: -123.2264278,
 	zoom: 10,
 	title: 'Richmond, Canada',
-	description: 'I was born here. My mom immigrated here right before the Third Taiwan Strait Crisis.',
+	description: 'I was born here. My mom immigrated to Richmond amid escalating tensions between Taiwan and China, right before the Third Taiwan Strait Crisis. I visited this city as an adult and experienced the cultural shock of expecting a place to be Western, only to learn that it was 53% Chinese. When going to the Richmond mall, so much of the signage was in Chinese that I thought maybe I had taken the plane to Taipei by mistake. In all honesty, I did not spend much time in Canada, nor do I know it\'s history well, but am thankful to hold its citizenship.',
     },
     {
 	latitude: 23.8629809,
