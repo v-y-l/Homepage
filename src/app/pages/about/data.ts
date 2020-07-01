@@ -26,7 +26,7 @@ export const POINTS: PointOfInterest[] = [
 	longitude: -84.56103223,
 	zoom: 6,
 	title: 'Atlanta, Georgia',
-	description: 'I went to Georgia Tech for undergrad.',
+	description: 'I went to Georgia Tech for undergrad. There, I was greeted with Southern hospitality, stuffed with delicious slow-cooked pulled-pork, grits, and biscuits, and confounded by the spectacular number of Peachtree roads, streets, and avenues. I made terrific friends from all over the world, of different upbringings, and studied many a night at Wafflehouse and the CULC. In short, I went to Atlanta as a boy and left as a man. Because it was the city that solidified my American identity, in a strange way, I think of myself as a Southerner.',
     },
     {
 	latitude: 42.3142643,
