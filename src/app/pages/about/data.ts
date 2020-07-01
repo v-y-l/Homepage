@@ -12,14 +12,14 @@ export const POINTS: PointOfInterest[] = [
 	longitude: -123.2264278,
 	zoom: 10,
 	title: 'Richmond, Canada',
-	description: 'I was born here. My mom immigrated to Richmond amid escalating tensions between Taiwan and China, right before the Third Taiwan Strait Crisis. I visited this city as an adult, experiencing the cultural shock of expecting a place to be Western, only to learn that it was 53% Chinese. When shopping at the Richmond Centre, so much of the signage was in Chinese that I thought maybe I took the plane to Taipei by mistake. In all honesty, I neither spent much time in Canada, nor know its history well, but am thankful to hold Canadian citizenship.',
+	description: 'I was born here. My mom immigrated to Richmond amid escalating tensions between Taiwan and China, right before the Third Taiwan Strait Crisis. I visited this city as an adult, experiencing the cultural shock of expecting a place to be Western, only to learn that it was 53% Chinese. When shopping at the Richmond Centre, so much of the signage was in Chinese that I thought perhaps I wrongly took the plane to Taipei. In all honesty, I neither spent much time in Canada, nor know its history well, but am immensely grateful to hold Canadian citizenship. Thanks mom!',
     },
     {
 	latitude: 23.8629809,
 	longitude: 121.16388,
 	zoom: 6,
 	title: 'Taipei, Taiwan',
-	description: 'I moved to Taipei as a toddler and spent my first 18 years there. Taiwan is a culinary paradise, a humidity hell, and another country with universal health care. It is a vibrant democracy, where one can freely make fun of the president on Twitter. I first went to a public school, Da\'an Elementary school, then a private international school, Taipei American School. For this reason I speak both Mandarin and English fluently.',
+	description: 'I moved to Taipei as a toddler and spent my first 18 years there. Taiwan is a culinary paradise and a humidity hell. It is a vibrant democracy, where one can freely make fun of its president on Twitter. I went to a public school first, Da\'an Elementary school, then a private international school, Taipei American School. For this reason I speak both Mandarin and English fluently and feel within myself both cultures. I recognize my privilege having attended a wealthy, exclusive school, which juxtaposes sharply against my public school experience. I should also mention that I had Boba tea before it was mainstream.',
     },
     {
 	latitude: 33.7676334,
