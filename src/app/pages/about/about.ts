@@ -17,6 +17,7 @@ export class About implements AfterViewInit {
     map: any;
 
     @ViewChild('aboutBox') aboutBox: ElementRef;
+    @ViewChild('content') content: ElementRef;
 
     ngAfterViewInit() {
 	const position = this.getCurrentPosition();
@@ -54,6 +55,7 @@ export class About implements AfterViewInit {
 	this.pointIndex -= 1;
 	const position = this.getCurrentPosition();
 	const zoom = this.getCurrentZoom();
+	this.content.nativeElement.scrollTop = 0;
 	this.flyTo(position, zoom);
     }
 
@@ -61,6 +63,7 @@ export class About implements AfterViewInit {
 	this.pointIndex += 1;
 	const position = this.getCurrentPosition();
 	const zoom = this.getCurrentZoom();
+	this.content.nativeElement.scrollTop = 0;
 	this.flyTo(position, zoom);
     }
 

@@ -6,10 +6,6 @@ h1 {
     margin-bottom: 0px;
 }
 
-h1.mat-dialog-title {
-    max-height: 65px;
-}
-
 div.mat-dialog-content {
     margin: 10px 0px;
     padding: 0px;
@@ -29,7 +25,11 @@ div.citations-container {
 
 @media screen and (max-width: 840px) {
     h1.mat-dialog-title {
-	max-height: 200px;
 	overflow: scroll;
+	max-height: 65px;
+    }
+    div.mat-dialog-content {
+	overflow: scroll;
+	max-height: 200px;
     }
 }

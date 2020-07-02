@@ -27,6 +27,6 @@
 @media screen and (max-width: 840px) {
     .content-container {
 	overflow-y: scroll;
-	max-height: 150px;
+	max-height: 130px;
     }
 }

@@ -22,14 +22,14 @@ export const POINTS: PointOfInterest[] = [
 	description: 'I moved to Taipei as a toddler and spent my first 18 years there. Taiwan is a culinary paradise,  a humidity hell, and a vibrant democracy where one can freely make fun of its president on Twitter. Here, I routinely had Boba tea before it was mainstream. I first went to a public school, Da\'an Elementary school, then a private international school, Taipei American School. For this reason I speak both Mandarin and English, and feel within myself a melting pot of the two cultures. I recognize my privilege having attended a wealthy, exclusive school - which juxtaposed against my public school experience - and it was with this strong sense of gratitude that I went to college in the states.',
     },
     {
-	latitude: 33.7676334,
+	latitude: 30.7676334,
 	longitude: -84.56103223,
-	zoom: 6,
+	zoom: 5,
 	title: 'Atlanta, Georgia',
 	description: 'I went to Georgia Tech for undergrad. This was the city where I went as a boy and left as a man. There, I was greeted with Southern hospitality, stuffed with delicious slow-cooked pulled-pork, grits, and biscuits, and confounded by the spectacular number of Peachtree roads, streets, and avenues. I made terrific friends from all over the world, of different upbringings, and studied many a night at Wafflehouse and the CULC. Because it was the city that solidified my American identity, in a strange way, I think of myself as a Southerner.',
     },
     {
-	latitude: 42.3142643,
+	latitude: 40.3142643,
 	longitude: -71.110711,
 	zoom: 6,
 	title: 'Boston, Massachussetts',
