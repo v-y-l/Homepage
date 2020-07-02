@@ -15,7 +15,7 @@ export const POINTS: PointOfInterest[] = [
 	description: 'I was born here. My mom immigrated to Richmond amid escalating tensions between Taiwan and China, right before the Third Taiwan Strait Crisis. Visiting this city as an adult, I experienced the cultural shock of expecting a place to be Western, only to learn that it was 53% Chinese. So much of the signage at Richmond Centre was in Chinese that I thought perhaps I accidentally flew to Taipei. Although I neither spent much time in Canada, nor know its history well, I am immensely grateful to hold Canadian citizenship.',
     },
     {
-	latitude: 23.8629809,
+	latitude: 21.8629809,
 	longitude: 121.16388,
 	zoom: 6,
 	title: 'Taipei, Taiwan',
