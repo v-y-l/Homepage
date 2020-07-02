@@ -5,11 +5,14 @@
   mat-button (click)="goToShortcut()">
   <div>
     <img
+      *ngIf="fileType === FileType.About"
+      src="../../assets/about.png"/>
+    <img
       *ngIf="fileType === FileType.Folder"
       src="../../assets/folder.png"/>
     <img
-      *ngIf="fileType === FileType.About"
-      src="../../assets/about.png"/>
+      *ngIf="fileType === FileType.Resume"
+      src="../../assets/resume.png"/>
   </div>
   <div fxLayout="row" fxLayoutAlign="center">{{name}}</div>
 </button>
